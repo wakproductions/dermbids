@@ -1,5 +1,6 @@
 Dermbids::Application.routes.draw do
-  post 'quote_requests/' => 'quote_requests#create'
+  # webhooks from formstack api forms
+  post 'formstack/quote_requests' => 'quote_requests#create'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
