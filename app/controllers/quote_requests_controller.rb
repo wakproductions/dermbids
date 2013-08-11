@@ -5,7 +5,7 @@ class QuoteRequestsController < ApplicationController
   def create
     formstack_data = params.to_json
     QuoteRequest.create(:formstack_data=>formstack_data)
-    render nothing: true
+    head :ok
   end
 
 end
