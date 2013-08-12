@@ -1,0 +1,89 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image1 url:</strong>
+  <%= image_tag(@tattoo_removal_request.image1_url, :width=>"200px", :height=>"200px") %>
+</p>
+
+<p>
+  <strong>Image2 url:</strong>
+  <%= image_tag(@tattoo_removal_request.image2_url) %>
+</p>
+
+<p>
+  <strong>Reason:</strong>
+  <%= @tattoo_removal_request.reason %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @tattoo_removal_request.location %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @tattoo_removal_request.size %>
+</p>
+
+<p>
+  <strong>Inked by:</strong>
+  <%= @tattoo_removal_request.inked_by %>
+</p>
+
+<p>
+  <strong>Ink age:</strong>
+  <%= @tattoo_removal_request.ink_age %>
+</p>
+
+<p>
+  <strong>Colors:</strong>
+  <%= @tattoo_removal_request.colors %>
+</p>
+
+<p>
+  <strong>Skin tone:</strong>
+  <%= @tattoo_removal_request.skin_tone %>
+</p>
+
+<p>
+  <strong>Consultation visit:</strong>
+  <%= @tattoo_removal_request.consultation_visit %>
+</p>
+
+<p>
+  <strong>Consultation looking reason string:</strong>
+  <%= @tattoo_removal_request.consultation_looking_reason %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @tattoo_removal_request.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @tattoo_removal_request.last_name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @tattoo_removal_request.email %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @tattoo_removal_request.age %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @tattoo_removal_request.zip %>
+</p>
+
+<p>
+  <strong>Referral:</strong>
+  <%= @tattoo_removal_request.referral %>
+</p>
+
+<%= link_to 'Edit', edit_tattoo_removal_request_path(@tattoo_removal_request) %> |
+<%= link_to 'Back', tattoo_removal_requests_path %>

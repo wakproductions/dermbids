@@ -1,4 +1,6 @@
 Dermbids::Application.routes.draw do
+  resources :tattoo_removal_requests
+
   # webhooks from formstack api forms
   post 'formstack/quote_requests' => 'quote_requests#create'
 

@@ -1,0 +1,2 @@
+module TattooRemovalRequestsHelper
+end

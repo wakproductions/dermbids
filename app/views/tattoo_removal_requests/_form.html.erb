@@ -1,0 +1,85 @@
+<%= form_for(@tattoo_removal_request) do |f| %>
+  <% if @tattoo_removal_request.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tattoo_removal_request.errors.count, "error") %> prohibited this tattoo_removal_request from being saved:</h2>
+
+      <ul>
+      <% @tattoo_removal_request.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :image1_url %><br>
+    <%= f.text_field :image1_url %>
+  </div>
+  <div class="field">
+    <%= f.label :image2_url %><br>
+    <%= f.text_field :image2_url %>
+  </div>
+  <div class="field">
+    <%= f.label :reason %><br>
+    <%= f.text_field :reason %>
+  </div>
+  <div class="field">
+    <%= f.label :location %><br>
+    <%= f.text_field :location %>
+  </div>
+  <div class="field">
+    <%= f.label :size %><br>
+    <%= f.text_field :size %>
+  </div>
+  <div class="field">
+    <%= f.label :inked_by %><br>
+    <%= f.text_field :inked_by %>
+  </div>
+  <div class="field">
+    <%= f.label :ink_age %><br>
+    <%= f.text_field :ink_age %>
+  </div>
+  <div class="field">
+    <%= f.label :colors %><br>
+    <%= f.text_field :colors %>
+  </div>
+  <div class="field">
+    <%= f.label :skin_tone %><br>
+    <%= f.text_field :skin_tone %>
+  </div>
+  <div class="field">
+    <%= f.label :consultation_visit %><br>
+    <%= f.text_field :consultation_visit %>
+  </div>
+  <div class="field">
+    <%= f.label :consultation_looking_reason %><br>
+    <%= f.text_field :consultation_looking_reason %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br>
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br>
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.number_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :zip %><br>
+    <%= f.number_field :zip %>
+  </div>
+  <div class="field">
+    <%= f.label :referral %><br>
+    <%= f.text_field :referral %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  image1_url: MyString
+  image2_url: MyString
+  reason: MyString
+  location: MyString
+  size: MyString
+  inked_by: MyString
+  ink_age: MyString
+  colors: MyString
+  skin_tone: MyString
+  consultation_visit: MyString
+  consultation_looking_reason: MyString
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  age: 1
+  zip: 1
+  referral: MyString
+
+two:
+  image1_url: MyString
+  image2_url: MyString
+  reason: MyString
+  location: MyString
+  size: MyString
+  inked_by: MyString
+  ink_age: MyString
+  colors: MyString
+  skin_tone: MyString
+  consultation_visit: MyString
+  consultation_looking_reason: MyString
+  first_name: MyString
+  last_name: MyString
+  email: MyString
+  age: 1
+  zip: 1
+  referral: MyString

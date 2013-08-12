@@ -11,13 +11,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130812001114) do
+ActiveRecord::Schema.define(version: 20130812005104) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "quote_requests", force: true do |t|
     t.text     "formstack_data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tattoo_removal_requests", force: true do |t|
+    t.integer  "quote_request_id"
+    t.string   "image1_url"
+    t.string   "image2_url"
+    t.string   "reason"
+    t.string   "location"
+    t.string   "size"
+    t.string   "inked_by"
+    t.string   "ink_age"
+    t.string   "colors"
+    t.string   "skin_tone"
+    t.string   "consultation_visit"
+    t.string   "consultation_looking_reason"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.integer  "age"
+    t.integer  "zip"
+    t.string   "referral"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
