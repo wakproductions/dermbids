@@ -101,7 +101,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/tattoo_removal_requests/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="85" selection-start="154" selection-end="154" vertical-scroll-proportion="0.14423077">
+            <state line="9" column="125" selection-start="325" selection-end="325" vertical-scroll-proportion="0.33498758">
               <folding />
             </state>
           </provider>
@@ -766,7 +766,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tattoo_removal_requests/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="85" selection-start="154" selection-end="154" vertical-scroll-proportion="0.14423077">
+        <state line="9" column="125" selection-start="325" selection-end="325" vertical-scroll-proportion="0.33498758">
           <folding />
         </state>
       </provider>

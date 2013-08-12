@@ -7,7 +7,7 @@
 
 <p>
   <strong>Image2 url:</strong>
-  <%= image_tag(@tattoo_removal_request.image2_url) %>
+  <%= image_tag(@tattoo_removal_request.image2_url, :width=>"200px", :height=>"200px") if @tattoo_removal_request.image2_url %>
 </p>
 
 <p>
