@@ -6,7 +6,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376147843880" ignored="false" />
     <file path="/database.yml" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376148032701" ignored="false" />
-    <file path="/quote_requests_controller.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376274804720" ignored="false" />
+    <file path="/quote_requests_controller.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376277379956" ignored="false" />
     <file path="/routes.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376276010088" ignored="false" />
     <file path="/20130812001114_change_quote_requests_formstack_data_to_text.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376266539220" ignored="false" />
     <file path="/20130812005452_add_tattoo_removal_request_to_quote_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376268989717" ignored="false" />
@@ -35,19 +35,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="quote_requests_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="quote_requests_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/quote_requests_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="14" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="20130812005104_create_tattoo_removal_requests.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/migrate/20130812005104_create_tattoo_removal_requests.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="14" selection-start="122" selection-end="599" vertical-scroll-proportion="0.0">
+            <state line="32" column="19" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.68708974">
               <folding />
             </state>
           </provider>
@@ -62,46 +53,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newrelic.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="33" selection-start="1718" selection-end="1736" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tattoo_removal_requests_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/tattoo_removal_requests_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tattoo_removal_requests/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="24" selection-start="178" selection-end="178" vertical-scroll-proportion="-5.625">
+            <state line="9" column="24" selection-start="178" selection-end="178" vertical-scroll-proportion="-4.0416665">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tattoo_removal_requests/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="125" selection-start="325" selection-end="325" vertical-scroll-proportion="0.33498758">
+            <state line="9" column="125" selection-start="325" selection-end="325" vertical-scroll-proportion="36.958332">
               <folding />
             </state>
           </provider>
@@ -127,11 +91,11 @@
         <option value="$PROJECT_DIR$/db/migrate/20130812005104_create_tattoo_removal_requests.rb" />
         <option value="$PROJECT_DIR$/app/models/tattoo_removal_request.rb" />
         <option value="$PROJECT_DIR$/app/models/quote_request.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/quote_requests_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/tattoo_removal_requests/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tattoo_removal_requests/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tattoo_removal_requests/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/quote_requests_controller.rb" />
       </list>
     </option>
   </component>
@@ -694,20 +658,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="798" selection-end="798" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/tattoo_removal_request.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="27" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130812005104_create_tattoo_removal_requests.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="14" selection-start="122" selection-end="599" vertical-scroll-proportion="0.0">
@@ -722,23 +672,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/quote_requests_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="14" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="36" selection-start="149" selection-end="149" vertical-scroll-proportion="0.12295082">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="33" selection-start="1718" selection-end="1736" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -750,23 +686,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tattoo_removal_requests/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="125" selection-start="325" selection-end="325" vertical-scroll-proportion="36.958332">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tattoo_removal_requests_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.8103044">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/newrelic.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="33" selection-start="1718" selection-end="1736" vertical-scroll-proportion="0.032327585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="798" selection-end="798" vertical-scroll-proportion="0.9977827">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/tattoo_removal_request.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="27" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tattoo_removal_requests/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="24" selection-start="178" selection-end="178" vertical-scroll-proportion="-5.625">
+        <state line="9" column="24" selection-start="178" selection-end="178" vertical-scroll-proportion="-4.0416665">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tattoo_removal_requests/show.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/quote_requests_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="125" selection-start="325" selection-end="325" vertical-scroll-proportion="0.33498758">
+        <state line="32" column="19" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.68708974">
           <folding />
         </state>
       </provider>

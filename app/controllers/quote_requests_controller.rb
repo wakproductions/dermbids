@@ -28,7 +28,7 @@ private
       :"21100861"=>:zip,
       #21100866:
       #21100806: Yes #this is the verification field that there is a ruler in image 1
-      #21100801:
+      :"21100801"=>:image2_url,
       :"21100811"=>:location,
       :"21100808"=>:reason,
       :"21100816"=>:inked_by,
