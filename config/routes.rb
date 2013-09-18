@@ -1,4 +1,5 @@
 Dermbids::Application.routes.draw do
+  devise_for :users
   resources :tattoo_removal_requests
 
   # webhooks from formstack api forms

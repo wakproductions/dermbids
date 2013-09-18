@@ -1,0 +1,12 @@
+9/17/13
+-------
+Goal for next Tuesday: have a test form in Rails and a sample page for Eric to view the data. 
+
+9/10/13
+-------
+Done about 10-15 quotes out of ~160 submissions.
+~3 have closed.
+
+# of service locations in system: ~15 - 20
+
+Goal for next Tuesday: Winston will solidify the list of requirements by adding more detail and refine the wireframes, particularly around the control panel and interactions between the Admin and Dermatologist.
