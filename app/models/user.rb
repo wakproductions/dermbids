@@ -12,8 +12,11 @@ class User < ActiveRecord::Base
 
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable
 
-  after_initialize do |p|
-    p.generate_random_password if new_record?
+  validates :user_type, presence: true
+
+  after_initialize do |u|
+    u.generate_random_password if new_record?
+    u.user_type = TYPES[:patient] # type defaults to patient
   end
 
   def generate_random_password
