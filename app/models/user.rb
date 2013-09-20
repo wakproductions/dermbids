@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :quote_requests
+
   TYPES={
       patient: 0,
       provider: 1,
@@ -10,4 +12,13 @@ class User < ActiveRecord::Base
 
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :trackable, :validatable
 
+  after_initialize do |p|
+    p.generate_random_password if new_record?
+  end
+
+  def generate_random_password
+    o = [('a'..'z'),('A'..'Z'),(0..9)].map{|i| i.to_a}.flatten
+    random_password = (0...10).map{ o[rand(o.length)] }.join
+    self.password = random_password
+  end
 end

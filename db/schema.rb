@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130919194235) do
+ActiveRecord::Schema.define(version: 20130920042909) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(version: 20130919194235) do
     t.text     "formstack_data"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "patient_user_id"
+    t.integer  "user_id"
     t.string   "full_name"
     t.string   "postal_code"
     t.string   "formstack_photo_url"

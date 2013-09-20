@@ -34,6 +34,8 @@ gem 'devise'
 group :development, :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
+  gem 'spork', '~> 1.0rc'
 end
 
 group :test do

@@ -4,35 +4,36 @@
     <list default="true" id="090fe917-affa-4458-a1d9-33c568a1ea2c" name="Default" comment="" />
     <ignored path="dermbids.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Gemfile" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379602947049" ignored="false" />
+    <file path="/Gemfile" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379691152498" ignored="false" />
     <file path="/database.yml" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379519556940" ignored="false" />
-    <file path="/quote_requests_controller.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376277379956" ignored="false" />
+    <file path="/quote_requests_controller.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379707299950" ignored="false" />
     <file path="/routes.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379527562188" ignored="false" />
     <file path="/20130812001114_change_quote_requests_formstack_data_to_text.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376266539220" ignored="false" />
     <file path="/20130812005452_add_tattoo_removal_request_to_quote_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376268989717" ignored="false" />
     <file path="/20130812005104_create_tattoo_removal_requests.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376269086111" ignored="false" />
     <file path="/tattoo_removal_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376272991955" ignored="false" />
-    <file path="/quote_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376273005786" ignored="false" />
+    <file path="/quote_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379694322012" ignored="false" />
     <file path="/fragment.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376275774208" ignored="false" />
     <file path="/index.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376276352343" ignored="false" />
     <file path="/show.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376276434624" ignored="false" />
     <file path="/.gitignore" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379537198719" ignored="false" />
     <file path="/view_new_quote_requests.feature" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379451887042" ignored="false" />
     <file path="/factories_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379512236660" ignored="false" />
-    <file path="/user_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379622866051" ignored="false" />
+    <file path="/user_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379705096403" ignored="false" />
     <file path="/development.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379527399867" ignored="false" />
     <file path="/production.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379527474221" ignored="false" />
     <file path="/20130918180930_add_devise_to_users.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379528248017" ignored="false" />
     <file path="/seeds.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379532831160" ignored="false" />
-    <file path="/user.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379535796215" ignored="false" />
+    <file path="/user.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379705813621" ignored="false" />
     <file path="/20130918203952_remove_tattoo_removal_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379536832717" ignored="false" />
-    <file path="/quote_request_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379624231039" ignored="false" />
-    <file path="/spec_helper.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379603018188" ignored="false" />
-    <file path="/users.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379623383970" ignored="false" />
+    <file path="/quote_request_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379704001652" ignored="false" />
+    <file path="/spec_helper.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379691322072" ignored="false" />
+    <file path="/users.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379705026378" ignored="false" />
     <file path="/validate_factories_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379618650449" ignored="false" />
     <file path="/quote_requests.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379620744128" ignored="false" />
     <file path="/20130919194235_remove_quote_request_from_quote_requests.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379619915711" ignored="false" />
     <file path="/temp.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379623434598" ignored="false" />
+    <file path="/20130920042909_rename_quote_request_patient_user_to_user.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379651449320" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +53,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="validate_factories_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/validate_factories_spec.rb">
+      <file leaf-file-name="quote_requests_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/quote_requests_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="65" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0">
+            <state line="9" column="61" selection-start="394" selection-end="394" vertical-scroll-proportion="0.26732674">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="65" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quote_request.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/quote_request.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="58" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -64,16 +83,25 @@
       <file leaf-file-name="quote_requests.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/factories/quote_requests.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
+            <state line="7" column="57" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quote_request_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="quote_request_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/quote_request_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="75" selection-start="648" selection-end="648" vertical-scroll-proportion="0.40697673">
+            <state line="16" column="44" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="17" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -82,7 +110,7 @@
       <file leaf-file-name="users.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/factories/users.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="20" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+            <state line="19" column="32" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -101,22 +129,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/models/quote_request.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130918203952_remove_tattoo_removal_request.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/spec/factories_spec.rb" />
         <option value="$PROJECT_DIR$/spec/validate_factories_spec.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130919194235_remove_quote_request_from_quote_requests.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/spec/factories/quote_requests.rb" />
-        <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/factories/users.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130920042909_rename_quote_request_patient_user_to_user.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
+        <option value="$PROJECT_DIR$/app/models/quote_request.rb" />
         <option value="$PROJECT_DIR$/spec/models/quote_request_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/factories/users.rb" />
+        <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/quote_requests_controller.rb" />
       </list>
     </option>
   </component>
@@ -224,38 +252,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="factories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dermbids" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dermbids" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dermbids" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dermbids" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -654,8 +650,8 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297491" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28856915" sideWeight="0.6702509" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3988889" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28297362" sideWeight="0.6827957" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39784947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3172043" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -732,48 +728,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="901" selection-end="901" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="57" selection-start="272" selection-end="272" vertical-scroll-proportion="0.36585367">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130918203721_add_basic_fields_to_quote_request.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130919194235_remove_quote_request_from_quote_requests.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="47" selection-start="184" selection-end="184" vertical-scroll-proportion="0.234375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130918203952_remove_tattoo_removal_request.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="39" selection-start="111" selection-end="111" vertical-scroll-proportion="0.10714286">
@@ -795,13 +749,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="44" selection-start="374" selection-end="374" vertical-scroll-proportion="0.41158536">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130810152311_create_quote_requests.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="98" selection-start="174" selection-end="174" vertical-scroll-proportion="0.41158536">
@@ -809,37 +756,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/quote_requests.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/validate_factories_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="65" selection-start="224" selection-end="224" vertical-scroll-proportion="0.0">
+        <state line="5" column="65" selection-start="224" selection-end="224" vertical-scroll-proportion="0.14851485">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130919194235_remove_quote_request_from_quote_requests.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="71" selection-start="242" selection-end="242" vertical-scroll-proportion="0.42613637">
+        <state line="4" column="47" selection-start="184" selection-end="184" vertical-scroll-proportion="0.11881188">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130920042909_rename_quote_request_patient_user_to_user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="61" selection-start="142" selection-end="142" vertical-scroll-proportion="0.05940594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="27" selection-start="545" selection-end="545" vertical-scroll-proportion="-0.62376237">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/factories/users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="20" selection-start="42" selection-end="42" vertical-scroll-proportion="0.0">
+        <state line="19" column="32" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="17" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="2" selection-start="156" selection-end="156" vertical-scroll-proportion="0.23762377">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/quote_request_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="75" selection-start="648" selection-end="648" vertical-scroll-proportion="0.40697673">
+        <state line="16" column="44" selection-start="691" selection-end="691" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/factories/quote_requests.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="57" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="65" selection-start="490" selection-end="490" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/quote_request.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="58" selection-start="219" selection-end="219" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/quote_requests_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="61" selection-start="394" selection-end="394" vertical-scroll-proportion="0.26732674">
           <folding />
         </state>
       </provider>
