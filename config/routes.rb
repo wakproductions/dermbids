@@ -1,9 +1,14 @@
 Dermbids::Application.routes.draw do
   devise_for :users
   resources :quote_requests, only: [:new, :create]
+  namespace :admin do
+    resources :quote_requests, only: [:index]
+  end
+
+
 
   # webhooks from formstack api forms
-  post 'formstack/quote_requests' => 'quote_requests#create'
+  #post 'formstack/quote_requests' => 'quote_requests#create' # not currently using formstack
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
