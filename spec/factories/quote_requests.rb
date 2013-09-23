@@ -3,6 +3,6 @@ FactoryGirl.define do
     full_name 'Abnercromnie Gnepufniak'
     email 'poofniak@wakproductions.com'
     postal_code '60601'
-    formstack_photo_url '/public/images/sample_tattoo_01.jpg'
+    formstack_photo_url 'sample_tattoo_01.jpg'
   end
 end

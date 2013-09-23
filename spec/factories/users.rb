@@ -14,12 +14,4 @@ FactoryGirl.define do
     email "wak-factorygirl@wakproductions.com"
     password "something"
   end
-
-  factory :no_password_user, :class=>User do
-    user_type User::TYPES[:patient]
-    first_name 'So'
-    last_name 'Insecure'
-    email 'so-insecure@wakproductions.com'
-  end
-
 end

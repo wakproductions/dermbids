@@ -1,6 +1,6 @@
 Dermbids::Application.routes.draw do
   devise_for :users
-  resources :tattoo_removal_requests
+  resources :quote_requests, only: [:new, :create]
 
   # webhooks from formstack api forms
   post 'formstack/quote_requests' => 'quote_requests#create'
