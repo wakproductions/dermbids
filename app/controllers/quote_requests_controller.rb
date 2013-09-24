@@ -1,5 +1,4 @@
 class QuoteRequestsController < ApplicationController
-
   # GET /quote_requests/new
   def new
     @quote_request = QuoteRequest.new

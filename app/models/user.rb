@@ -16,7 +16,6 @@ class User < ActiveRecord::Base
 
   after_initialize do |u|
     u.generate_random_password if new_record?
-    u.user_type = TYPES[:patient] # type defaults to patient
   end
 
   def generate_random_password
