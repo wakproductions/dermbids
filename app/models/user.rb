@@ -15,7 +15,10 @@ class User < ActiveRecord::Base
   validates :user_type, presence: true
 
   after_initialize do |u|
-    u.generate_random_password if new_record?
+    if new_record?
+      u.generate_random_password
+      u.user_type = TYPES[:patient]
+    end
   end
 
   def generate_random_password

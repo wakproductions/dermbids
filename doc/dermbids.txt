@@ -1,8 +1,6 @@
 ﻿Dermbids Todo
 -------------
-
-1. Break out form fields into discrete data fields (stick with text for now)
-2. Build scaffolding
+1. Add salutation (Dr., Mr., etc.) to Users table.
 
 
 

@@ -51,6 +51,9 @@ Spork.prefork do
     #     --seed 1234
     config.order = "random"
   end
+
+  # Load certain seed data for test - with rspec you only need to do this once for each test db instance
+  #load 'db/seeds/states.rb'
 end
 
 Spork.each_run do

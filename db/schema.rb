@@ -11,10 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130920042909) do
+ActiveRecord::Schema.define(version: 20130924182154) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "organizations", force: true do |t|
+    t.string   "business_name"
+    t.string   "address1"
+    t.string   "address2"
+    t.string   "city"
+    t.integer  "state_id"
+    t.string   "postal_code"
+    t.integer  "quote_request_contact_user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "quote_requests", force: true do |t|
     t.text     "formstack_data"
@@ -26,6 +38,16 @@ ActiveRecord::Schema.define(version: 20130920042909) do
     t.string   "formstack_photo_url"
     t.string   "email"
   end
+
+  create_table "states", force: true do |t|
+    t.string   "abbr"
+    t.string   "state_name"
+    t.integer  "country_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "states", ["abbr", "country_id"], name: "index_states_on_abbr_and_country_id", unique: true, using: :btree
 
   create_table "users", force: true do |t|
     t.integer  "user_type"
