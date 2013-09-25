@@ -1,9 +1,6 @@
 require 'spec_helper'
 
 describe QuoteRequest do
-  it { should belong_to(:user) }
-  it { should validate_presence_of(:email) }
-
   context "when the submitter's account exists" do
     subject(:quote_request) { FactoryGirl.build(:new_quote_request, :email=>'existing-email-test@wakproductions.com') }
     let!(:existing_user) { FactoryGirl.create(:patient_user, :email=>'existing-email-test@wakproductions.com') }

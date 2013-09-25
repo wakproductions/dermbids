@@ -6,4 +6,9 @@ class Admin::QuoteRequestsController < ApplicationController
     @quote_requests = QuoteRequest.all
   end
 
+  # GET /admin/quote_requests/:id
+  def show
+    @quote_request = QuoteRequest.find(params[:id])
+  end
+
 end

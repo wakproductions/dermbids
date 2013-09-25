@@ -13,22 +13,26 @@ describe Admin::QuoteRequestsController do
     response.should redirect_to new_user_session_path
   end
 
+
+  let(:quote_requests) {
+    [
+        FactoryGirl.create(:new_quote_request),
+        FactoryGirl.create(:new_quote_request, email: 'james.kirk@starfleet.org', full_name: 'James T Kirk'),
+        FactoryGirl.create(:new_quote_request, email: 'spock@starfleet.org', full_name: 'Spock'),
+        FactoryGirl.create(:new_quote_request, email: 'montgomery.scott@starfleet.org', full_name: 'Scotty')
+    ]
+  }
+
   describe 'GET #index' do
-    let(:quote_requests) {
-      [
-          FactoryGirl.create(:new_quote_request),
-          FactoryGirl.create(:new_quote_request, email: 'james.kirk@starfleet.org', full_name: 'James T Kirk'),
-          FactoryGirl.create(:new_quote_request, email: 'spock@starfleet.org', full_name: 'Spock'),
-          FactoryGirl.create(:new_quote_request, email: 'montgomery.scott@starfleet.org', full_name: 'Scotty')
-      ]
-    }
     before { as_admin(FactoryGirl.create(:admin_user)).get :index }
-
-    it 'shows a list of quote requests' do
-      assigns(:quote_requests).should eq(quote_requests)
-    end
-
+    it { assigns(:quote_requests).should eq(quote_requests) }
     it { response.should render_template :index }
+  end
+
+  describe 'GET #show' do
+    before { as_admin(FactoryGirl.create(:admin_user)).get :show, id: quote_requests.first.id }
+    it { assigns(:quote_request).should eq(quote_requests.first) }
+    it { response.should render_template :show }
   end
 
 end

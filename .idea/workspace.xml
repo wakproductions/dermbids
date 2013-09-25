@@ -6,8 +6,8 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Gemfile" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379960780169" ignored="false" />
     <file path="/database.yml" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379519556940" ignored="false" />
-    <file path="/quote_requests_controller.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379994706993" ignored="false" />
-    <file path="/routes.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379950464842" ignored="false" />
+    <file path="/quote_requests_controller.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380134442344" ignored="false" />
+    <file path="/routes.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380136903141" ignored="false" />
     <file path="/20130812001114_change_quote_requests_formstack_data_to_text.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376266539220" ignored="false" />
     <file path="/20130812005452_add_tattoo_removal_request_to_quote_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376268989717" ignored="false" />
     <file path="/20130812005104_create_tattoo_removal_requests.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376269086111" ignored="false" />
@@ -19,22 +19,22 @@
     <file path="/.gitignore" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379537198719" ignored="false" />
     <file path="/view_new_quote_requests.feature" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379451887042" ignored="false" />
     <file path="/factories_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379512236660" ignored="false" />
-    <file path="/user_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379708553994" ignored="false" />
+    <file path="/user_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380074119907" ignored="false" />
     <file path="/development.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379527399867" ignored="false" />
     <file path="/production.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379527474221" ignored="false" />
     <file path="/20130918180930_add_devise_to_users.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379528248017" ignored="false" />
     <file path="/seeds.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380046002310" ignored="false" />
-    <file path="/user.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380049539462" ignored="false" />
+    <file path="/user.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380073166487" ignored="false" />
     <file path="/20130918203952_remove_tattoo_removal_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379536832717" ignored="false" />
     <file path="/quote_request_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379704001652" ignored="false" />
     <file path="/spec_helper.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380052833885" ignored="false" />
-    <file path="/users.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380045980641" ignored="false" />
+    <file path="/users.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380072834646" ignored="false" />
     <file path="/validate_factories_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380052952445" ignored="false" />
     <file path="/quote_requests.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379948676661" ignored="false" />
     <file path="/20130919194235_remove_quote_request_from_quote_requests.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379619915711" ignored="false" />
     <file path="/temp.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379623434598" ignored="false" />
     <file path="/20130920042909_rename_quote_request_patient_user_to_user.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379651449320" ignored="false" />
-    <file path="/quote_requests_controller_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379996397898" ignored="false" />
+    <file path="/quote_requests_controller_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380132720343" ignored="false" />
     <file path="/_form.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379814235643" ignored="false" />
     <file path="/new.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379814068650" ignored="false" />
     <file path="/create.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379814335857" ignored="false" />
@@ -50,6 +50,9 @@
     <file path="/20130924182154_create_states.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380046972120" ignored="false" />
     <file path="/state.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380054061363" ignored="false" />
     <file path="/state_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380053927509" ignored="false" />
+    <file path="/organization_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380072994755" ignored="false" />
+    <file path="/organization.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380074043141" ignored="false" />
+    <file path="/show.html.haml" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380137167619" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,37 +72,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="21" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="organizations.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db/seeds/organizations.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="74" selection-start="214" selection-end="214" vertical-scroll-proportion="0.2662722">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="state_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/state_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="58" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="user_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="10" column="82" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="organizations_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/admin/organizations_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="10" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quote_requests_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/admin/quote_requests_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="51" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/quote_requests/show.html.haml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="0.82474226">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/organizations/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quote_requests_controller_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/controllers/admin/quote_requests_controller_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="84" selection-start="1250" selection-end="1251" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="organizations.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/factories/organizations.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="12" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="51" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="84" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="86" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -118,22 +175,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/admin/quote_requests_controller.rb" />
-        <option value="$PROJECT_DIR$/spec/controllers/admin/quote_requests_controller_spec.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/admin/quote_requests/index.html.haml" />
-        <option value="$PROJECT_DIR$/db/migrate/20130924175014_change_organization_state_to_state_id.rb" />
-        <option value="$PROJECT_DIR$/db/seeds/users.rb" />
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130924182154_create_states.rb" />
-        <option value="$PROJECT_DIR$/db/seeds/states.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
-        <option value="$PROJECT_DIR$/spec/validate_factories_spec.rb" />
         <option value="$PROJECT_DIR$/spec/factories/organizations.rb" />
         <option value="$PROJECT_DIR$/spec/models/state_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/state.rb" />
         <option value="$PROJECT_DIR$/db/seeds/organizations.rb" />
+        <option value="$PROJECT_DIR$/spec/models/quote_request_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/factories/users.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/models/organization.rb" />
+        <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/models/organization_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/admin/quote_requests_controller_spec.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/quote_requests_controller.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/app/views/quote_requests/show.html.haml" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/admin/quote_requests/show.html.haml" />
       </list>
     </option>
   </component>
@@ -205,75 +262,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dermbids" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dermbids" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dermbids" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dermbids" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="factories" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dermbids" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dermbids" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dermbids" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dermbids" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="seeds" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -304,6 +293,102 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tattoo_removal_requests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quote_requests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="quote_requests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -323,6 +408,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="RailsProjectView" />
@@ -336,6 +475,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/admin/quote_requests" />
+      <recent name="$PROJECT_DIR$/app/views/admin" />
+      <recent name="$PROJECT_DIR$/app/controllers/admin" />
       <recent name="$PROJECT_DIR$/app/views/quote_requests" />
     </key>
   </component>
@@ -464,6 +606,13 @@
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
@@ -676,7 +825,7 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297491" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.238247" sideWeight="0.6866792" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2374502" sideWeight="0.6866792" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31332082" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -754,114 +903,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/controllers/admin/quote_requests_controller_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="435" selection-end="435" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130924175014_change_organization_state_to_state_id.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="51" selection-start="129" selection-end="129" vertical-scroll-proportion="0.10273973">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130924182154_create_states.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="23" selection-start="262" selection-end="262" vertical-scroll-proportion="0.52380955">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/factories/organizations.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="12" selection-start="221" selection-end="221" vertical-scroll-proportion="0.33333334">
+        <state line="7" column="12" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/state_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/models/organization_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="58" selection-start="347" selection-end="347" vertical-scroll-proportion="0.0">
+        <state line="7" column="57" selection-start="266" selection-end="266" vertical-scroll-proportion="0.3106509">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/validate_factories_spec.rb">
+    <entry file="file://$PROJECT_DIR$/spec/models/quote_request_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="1" selection-start="1" selection-end="1" vertical-scroll-proportion="0.0">
+        <state line="7" column="14" selection-start="347" selection-end="347" vertical-scroll-proportion="0.3106509">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/state.rb">
+    <entry file="file://$PROJECT_DIR$/spec/controllers/quote_requests_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="75" selection-start="158" selection-end="158" vertical-scroll-proportion="0.1904762">
+        <state line="15" column="19" selection-start="323" selection-end="323" vertical-scroll-proportion="0.66568047">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/organization.rb">
+    <entry file="file://$PROJECT_DIR$/spec/helpers/devise_helpers.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="62" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0952381">
+        <state line="16" column="4" selection-start="346" selection-end="346" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
+    <entry file="file://$PROJECT_DIR$/spec/controllers/admin/quote_requests_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="52" selection-start="2168" selection-end="2168" vertical-scroll-proportion="2.5295858">
+        <state line="32" column="84" selection-start="1250" selection-end="1251" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/tattoo_removal_requests_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="21" selection-start="1212" selection-end="1212" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.14900662">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/tattoo_removal_requests/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="74" selection-start="182" selection-end="182" vertical-scroll-proportion="0.3106509">
+        <state line="0" column="0" selection-start="0" selection-end="32" vertical-scroll-proportion="-0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/quote_requests_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="26" selection-start="569" selection-end="569" vertical-scroll-proportion="0.5769231">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds/users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="81" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+        <state line="16" column="25" selection-start="324" selection-end="324" vertical-scroll-proportion="0.7619048">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="82" selection-start="318" selection-end="318" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/organizations_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="10" selection-start="303" selection-end="303" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/quote_requests_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="51" selection-start="288" selection-end="288" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/organizations/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds/states.rb">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="51" selection-start="302" selection-end="302" vertical-scroll-proportion="0.39940828">
+        <state line="25" column="86" selection-start="1165" selection-end="1165" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/seeds/organizations.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="74" selection-start="214" selection-end="214" vertical-scroll-proportion="0.2662722">
+        <state line="6" column="51" selection-start="209" selection-end="209" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/quote_requests/show.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="0.82474226">
           <folding />
         </state>
       </provider>
