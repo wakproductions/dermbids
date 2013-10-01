@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="809" measuredH="608" mockupW="800" mockupH="600">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1282" measuredH="608" mockupW="1273" mockupH="600">
   <controls>
     <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="9" y="8" w="800" h="600" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
@@ -84,6 +84,32 @@
     <control controlID="28" controlTypeID="com.balsamiq.mockups::Button" x="309" y="302" w="-1" h="-1" measuredW="238" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Move%20This%20Quote%20Request%20to%20Archive</text>
+      </controlProperties>
+    </control>
+    <control controlID="29" controlTypeID="com.balsamiq.mockups::Arrow" x="523" y="344" w="619" h="182" measuredW="150" measuredH="100" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <curvature>-1</curvature>
+        <direction>bottom</direction>
+        <leftArrow>false</leftArrow>
+        <stroke>solid</stroke>
+        <text>Clicking%20box%20will%20send%20an%20email%20to%20the%20clinic%20requesting%20a%20quote</text>
+      </controlProperties>
+    </control>
+    <control controlID="31" controlTypeID="com.balsamiq.mockups::CallOut" x="1049" y="295" w="-1" h="-1" measuredW="233" measuredH="40" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>The%20mail%20routine%20will%20send%20the%20email</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Arrow" x="698" y="163" w="444" h="124" measuredW="150" measuredH="100" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Page%20will%20refresh%20and%20displace%20a%20success%20or%20fail%20message%3B%20the%20clinic%20name%20will%20appear%20at%20the%20top%20under%20the%20%22send%20full%20detail%22%20section</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Tooltip" x="540" y="137" w="158" h="47" measuredW="156" measuredH="53" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Email%20was%20successfully%20sent</text>
+        <tooltipDirection>SE</tooltipDirection>
       </controlProperties>
     </control>
   </controls>

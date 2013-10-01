@@ -1,10 +1,10 @@
 Dermbids::Application.routes.draw do
-  resources :organizations
 
   devise_for :users
   resources :quote_requests, only: [:new, :create]
   namespace :admin do
     resources :quote_requests, only: [:index, :show]
+    resources :organizations
   end
 
 

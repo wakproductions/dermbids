@@ -1,0 +1,9 @@
+Hello <%= @organization.quote_request_contact.first_name %>,
+
+You have a new quote request from a patient via Dermbids. Here are the details:
+
+Name: [HIDDEN]
+
+Postal Code: <%= @quote_request.postal_code %>
+
+Image URL: <%= @quote_request.formstack_photo_url %>

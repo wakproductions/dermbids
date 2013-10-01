@@ -15,6 +15,14 @@ Dermbids::Application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
+  ActionMailer::Base.smtp_settings = {
+      :address => "smtp.1and1.com",
+      :enable_starttls_auto => true,
+      :port => 587,
+      :user_name => ENV["ONEANDONE_EMAIL_USERNAME"],
+      #:user_name => 'badusername',
+      :password => ENV['ONEANDONE_EMAIL_PASSWORD']
+  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log

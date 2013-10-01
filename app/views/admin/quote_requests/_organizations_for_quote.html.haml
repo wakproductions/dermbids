@@ -1,0 +1,6 @@
+#select-organization-for-quote
+  %h3 Select which organization(s) to request for a quote
+  -@organizations.each do |o|
+    %p
+      = "#{o.business_name} | #{o.city} | #{o.state} | "
+      = link_to("Submit Quote", "http://www.microsoft.com")

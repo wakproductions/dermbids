@@ -9,6 +9,7 @@ class Admin::QuoteRequestsController < ApplicationController
   # GET /admin/quote_requests/:id
   def show
     @quote_request = QuoteRequest.find(params[:id])
+    @organizations = Organization.all # This will later be changed to encompass only clinics in the local area for this quote request
   end
 
 end

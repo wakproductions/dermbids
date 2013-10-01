@@ -13,7 +13,6 @@ describe Admin::QuoteRequestsController do
     response.should redirect_to new_user_session_path
   end
 
-
   let(:quote_requests) {
     [
         FactoryGirl.create(:new_quote_request),
@@ -31,7 +30,10 @@ describe Admin::QuoteRequestsController do
 
   describe 'GET #show' do
     before { as_admin(FactoryGirl.create(:admin_user)).get :show, id: quote_requests.first.id }
+    let(:organizations) { [FactoryGirl.create(:organization), FactoryGirl.create(:organization)] } # create 2 organizations in the database
+
     it { assigns(:quote_request).should eq(quote_requests.first) }
+    it { assigns(:organizations).should eq(organizations) }
     it { response.should render_template :show }
   end
 
