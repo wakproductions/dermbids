@@ -30,10 +30,10 @@ describe Admin::QuoteRequestsController do
 
   describe 'GET #show' do
     before { as_admin(FactoryGirl.create(:admin_user)).get :show, id: quote_requests.first.id }
-    let(:organizations) { [FactoryGirl.create(:organization), FactoryGirl.create(:organization)] } # create 2 organizations in the database
+    let(:clinics) { [FactoryGirl.create(:clinic), FactoryGirl.create(:clinic2)] } # create 2 clinics in the database
 
     it { assigns(:quote_request).should eq(quote_requests.first) }
-    it { assigns(:organizations).should eq(organizations) }
+    it { assigns(:clinics).should eq(clinics) }
     it { response.should render_template :show }
   end
 

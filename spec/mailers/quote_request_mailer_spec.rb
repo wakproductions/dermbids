@@ -2,10 +2,10 @@ require "spec_helper"
 
 describe QuoteRequestMailer do
   let(:quote_request) { FactoryGirl.create(:new_quote_request) }
-  let(:organization) { FactoryGirl.create(:organization, quote_request_contact: FactoryGirl.create(:provider_user)) }
+  let(:clinic) { FactoryGirl.create(:clinic, quote_request_contact: FactoryGirl.create(:provider_user)) }
 
   describe '#request_quote_from_provider' do
-    let(:mail) { QuoteRequestMailer.request_quote_from_provider(quote_request, organization).deliver }
+    let(:mail) { QuoteRequestMailer.request_quote_from_provider(quote_request, clinic).deliver }
 
     #ensure that the subject is correct
     it 'renders the subject' do
@@ -15,7 +15,7 @@ describe QuoteRequestMailer do
 
     #ensure that the receiver is correct
     it 'renders the receiver email' do
-      mail.to.should == [organization.quote_request_contact.email]
+      mail.to.should == [clinic.quote_request_contact.email]
     end
 
     #ensure that the sender is correct
@@ -25,7 +25,7 @@ describe QuoteRequestMailer do
 
     #ensure that the name of the recipient appears in the email body
     it 'contains the recipient first name' do
-      mail.body.encoded.should match(organization.quote_request_contact.first_name)
+      mail.body.encoded.should match(clinic.quote_request_contact.first_name)
     end
 
     pending 'contains the patient first name, but not the last name'

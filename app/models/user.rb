@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   has_many :quote_requests
-  has_many :organizations, foreign_key: :quote_request_contact_user_id
+  has_many :clinics, foreign_key: :quote_request_contact_user_id
 
   TYPES={
       patient: 0,

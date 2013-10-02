@@ -1,7 +1,7 @@
 # Read about factories at https://github.com/thoughtbot/factory_girl
 
 FactoryGirl.define do
-  factory :organization do
+  factory :clinic do
     business_name "Winston's Shady Clinic"
     address1 "13 West Elm St"
     city "Scary"
@@ -10,7 +10,7 @@ FactoryGirl.define do
     #quote_request_contact_user_id 1
   end
 
-  factory :organization2, :class=>:organization do
+  factory :clinic2, :class=>:clinic do
     business_name 'Vandaleigh Industries Clinic (Test)'
     state_id 13
     city 'Chicago'

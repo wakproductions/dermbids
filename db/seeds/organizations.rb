@@ -6,4 +6,4 @@ org1 = {
   postal_code: 60601,
   quote_request_contact_user_id: User.admins.where(email: 'wak@wakproductions.com')
 }
-Organization.create(org1)
+Clinic.create(org1)

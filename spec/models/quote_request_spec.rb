@@ -30,11 +30,11 @@ describe QuoteRequest do
   end
 
   describe 'sends email messages to provider' do
-    let(:organization) { FactoryGirl.create(:organization, quote_request_contact: FactoryGirl.create(:provider_user))}
+    let(:clinic) { FactoryGirl.create(:clinic, quote_request_contact: FactoryGirl.create(:provider_user))}
 
     it 'sends the #send_email_quote_request_to_provider email' do
-      new_quote_request.send_email_quote_request_to_provider(organization)
-      ActionMailer::Base.deliveries.last.to.should == [organization.quote_request_contact.email]
+      new_quote_request.send_email_quote_request_to_provider(clinic)
+      ActionMailer::Base.deliveries.last.to.should == [clinic.quote_request_contact.email]
     end
   end
 end

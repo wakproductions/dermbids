@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe User do
+  it { should have_many(:clinics).with_foreign_key(:quote_request_contact_user_id) }
+
   subject(:patient_user) { FactoryGirl.create(:patient_user) }
 
   it 'should default to a type of patient' do

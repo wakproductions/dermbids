@@ -3,7 +3,7 @@
 #describe "organizations/index" do
 #  before(:each) do
 #    assign(:organizations, [
-#      stub_model(Organization,
+#      stub_model(Clinic,
 #        :business_name => "Business Name",
 #        :address1 => "Address1",
 #        :address2 => "Address2",
@@ -11,7 +11,7 @@
 #        :state => 1,
 #        :postal_code => "Postal Code"
 #      ),
-#      stub_model(Organization,
+#      stub_model(Clinic,
 #        :business_name => "Business Name",
 #        :address1 => "Address1",
 #        :address2 => "Address2",

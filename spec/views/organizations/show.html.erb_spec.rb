@@ -2,7 +2,7 @@
 #
 #describe "organizations/show" do
 #  before(:each) do
-#    @organization = assign(:organization, stub_model(Organization,
+#    @organization = assign(:organization, stub_model(Clinic,
 #      :business_name => "Business Name",
 #      :address1 => "Address1",
 #      :address2 => "Address2",

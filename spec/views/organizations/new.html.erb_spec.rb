@@ -2,7 +2,7 @@
 #
 #describe "organizations/new" do
 #  before(:each) do
-#    assign(:organization, stub_model(Organization,
+#    assign(:organization, stub_model(Clinic,
 #      :business_name => "MyString",
 #      :address1 => "MyString",
 #      :address2 => "MyString",
