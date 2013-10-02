@@ -13,7 +13,7 @@ describe QuoteRequest do
     req.masked_full_name.should == 'Hikaru S**********'
 
     req.full_name = 'Spock'
-    req.masked_full_name.should == 'Spock **********'
+    req.masked_full_name.should == 'Spock**********'
   end
 
   context "when the submitter's account exists" do
