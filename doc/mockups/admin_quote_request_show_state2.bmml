@@ -106,10 +106,15 @@
         <text>Page%20will%20refresh%20and%20displace%20a%20success%20or%20fail%20message%3B%20the%20clinic%20name%20will%20appear%20at%20the%20top%20under%20the%20%22send%20full%20detail%22%20section</text>
       </controlProperties>
     </control>
-    <control controlID="33" controlTypeID="com.balsamiq.mockups::Tooltip" x="540" y="137" w="158" h="47" measuredW="156" measuredH="53" zOrder="20" locked="false" isInGroup="-1">
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Tooltip" x="540" y="137" w="158" h="47" measuredW="156" measuredH="0" zOrder="20" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Email%20was%20successfully%20sent</text>
         <tooltipDirection>SE</tooltipDirection>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::StickyNote" x="981" y="468" w="242" h="123" measuredW="109" measuredH="123" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Whether%20the%20clinic%20name%20shows%20with%20the%20%22Send%20full%20detail%22%20button%20or%20%22Assign%22%20button%20is%20determined%20by%20the%20presence%20of%20a%20ClinicQuoteRequest%20object.</text>
       </controlProperties>
     </control>
   </controls>

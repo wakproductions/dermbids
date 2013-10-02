@@ -1,5 +1,6 @@
 class QuoteRequest < ActiveRecord::Base
   belongs_to :user
+  has_many :clinic_quote_requests
 
   validates :email, presence: true
 
@@ -8,7 +9,9 @@ class QuoteRequest < ActiveRecord::Base
   end
 
   # Calling this will generate the email that goes to the provider notifying that Dermbids is requesting a quote
-  def send_email_quote_request_to_provider(organization)
-    QuoteRequestMailer.request_quote_from_provider(self, organization).deliver
-  end
+  # TODO Replace this with 'request_quote_from_clinic', which generates a ClinicQuoteRequest record
+  #def send_email_quote_request_to_provider(organization)
+  #  QuoteRequestMailer.request_quote_from_provider(self, organization).deliver
+  #end
+
 end

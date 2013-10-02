@@ -2,7 +2,19 @@ require 'spec_helper'
 
 describe QuoteRequest do
   subject(:new_quote_request) { FactoryGirl.build(:new_quote_request) }
+  it { should have_many :clinic_quote_requests }
   it { should validate_presence_of :email }
+
+  describe '#masked_full_name' do
+    req = FactoryGirl.build(:new_quote_request, full_name: 'James T. Kirk')
+    req.masked_full_name.should == 'James T**********' # should be first name followed by 10 asterisks
+
+    req.full_name = 'Hikaru Sulu'
+    req.masked_full_name.should == 'Hikaru S**********'
+
+    req.full_name = 'Spock'
+    req.masked_full_name.should == 'Spock **********'
+  end
 
   context "when the submitter's account exists" do
     subject(:quote_request) { FactoryGirl.build(:new_quote_request, :email=>'existing-email-test@wakproductions.com') }
