@@ -1,0 +1,6 @@
+#clinics-already-quoted
+  %h3 These clinics you have already requested a quote from:
+  -@clinics.already_quote_requested(@quote_request).each do |o|
+    %p
+      = "#{o.business_name} | #{o.city} | #{o.state} | "
+      = link_to("Request Quote", "admin/clinic_quote_requests#create")

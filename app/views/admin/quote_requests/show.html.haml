@@ -17,4 +17,6 @@
   %strong Image URL:
   =@quote_request.formstack_photo_url
 
-= render partial: 'admin/quote_requests/organizations_for_quote'
+#select-clinics-for-quote
+  = render partial: 'admin/quote_requests/clinics_already_quoted'
+  = render partial: 'admin/quote_requests/clinics_not_yet_quoted'
