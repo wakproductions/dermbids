@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Business name:</strong>
+  <%= @clinic.business_name %>
+</p>
+
+<p>
+  <strong>Address1:</strong>
+  <%= @clinic.address1 %>
+</p>
+
+<p>
+  <strong>Address2:</strong>
+  <%= @clinic.address2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @clinic.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @clinic.state %>
+</p>
+
+<p>
+  <strong>Postal code:</strong>
+  <%= @clinic.postal_code %>
+</p>
+
+<%= link_to 'Edit', edit_admin_clinic_path(@clinic) %> |
+<%= link_to 'Back', admin_clinics_path %>

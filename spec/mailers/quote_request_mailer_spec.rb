@@ -28,7 +28,9 @@ describe QuoteRequestMailer do
       mail.body.encoded.should match(clinic.quote_request_contact.first_name)
     end
 
-    pending 'contains the patient first name, but not the last name'
+    it "contains the patient's masked full name" do
+      mail.body.encoded.should match(quote_request.masked_full_name)
+    end
 
     it "contains the patient's postal code" do
       mail.body.encoded.should match(quote_request.postal_code)

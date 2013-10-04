@@ -3,10 +3,12 @@ require 'helpers/devise_helpers'
 
 describe Admin::QuoteRequestsController do
   after(:each) { Warden.test_reset! }
+
   it 'only allows admins to access this section' do
     as_admin(FactoryGirl.create(:admin_user)).get :index
     response.should render_template :index
   end
+
   it 'blocks non admin from accessing this section' do
     as_patient(FactoryGirl.create(:patient_user)).get :index
     response.should_not render_template :index

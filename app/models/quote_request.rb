@@ -12,10 +12,15 @@ class QuoteRequest < ActiveRecord::Base
     full_name[/(\w*\s.|\w*)/] + '**********'
   end
 
-  # Calling this will generate the email that goes to the provider notifying that Dermbids is requesting a quote
-  # TODO Replace this with 'request_quote_from_clinic', which generates a ClinicQuoteRequest record
-  #def send_email_quote_request_to_provider(organization)
-  #  QuoteRequestMailer.request_quote_from_provider(self, organization).deliver
-  #end
+  # Creates a ClinicQuoteRequest object to log the fact that a quote request was sent to the given clinic
+  def request_quote_from_clinic(clinic, initiated_by_user=nil)
+    cqr=self.clinic_quote_requests.create(
+        initiated_by_user: initiated_by_user,  # this will normally be current_user
+        clinic: clinic,
+        quote_request: self
+    )
+    cqr.send_email_to_clinic # TODO this may have to be refactored to become thread safe
+    return cqr
+  end
 
 end

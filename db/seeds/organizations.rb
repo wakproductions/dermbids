@@ -1,4 +1,4 @@
-# Creates a list of organizations
+# Creates a list of clinics
 # Last updated: 9/24/13
 
 org1 = {

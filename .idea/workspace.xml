@@ -2,16 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="090fe917-affa-4458-a1d9-33c568a1ea2c" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/javascripts/organizations.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/clinics.js.coffee" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/assets/stylesheets/organizations.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/clinics.css.scss" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/controllers/admin/organizations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/admin/clinics_controller.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/admin/organizations/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/clinics/_form.html.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/admin/organizations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/clinics/edit.html.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/admin/organizations/index.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/clinics/index.html.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/admin/organizations/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/admin/clinics/index.json.jbuilder" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/admin/organizations/new.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/clinics/new.html.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/admin/organizations/show.html.erb" afterPath="$PROJECT_DIR$/app/views/admin/clinics/show.html.erb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/views/admin/organizations/show.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/admin/clinics/show.json.jbuilder" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/spec/requests/organizations_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/clinics_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/Dermbids Time Log.xlsm" afterPath="$PROJECT_DIR$/doc/Dermbids Time Log.xlsm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/mockups/admin_quote_request_show_state2.bmml" afterPath="$PROJECT_DIR$/doc/mockups/admin_quote_request_show_state2.bmml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/clinic.rb" afterPath="$PROJECT_DIR$/app/models/clinic.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/clinic_spec.rb" afterPath="$PROJECT_DIR$/spec/models/clinic_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/clinic_quote_request.rb" afterPath="$PROJECT_DIR$/app/models/clinic_quote_request.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/clinic_quote_request_spec.rb" afterPath="$PROJECT_DIR$/spec/models/clinic_quote_request_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/helpers/devise_helpers.rb" afterPath="$PROJECT_DIR$/spec/helpers/devise_helpers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/views/organizations/edit.html.erb_spec.rb" afterPath="$PROJECT_DIR$/spec/views/organizations/edit.html.erb_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/views/organizations/index.html.erb_spec.rb" afterPath="$PROJECT_DIR$/spec/views/organizations/index.html.erb_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/views/organizations/new.html.erb_spec.rb" afterPath="$PROJECT_DIR$/spec/views/organizations/new.html.erb_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds/organizations.rb" afterPath="$PROJECT_DIR$/db/seeds/organizations.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/quote_request.rb" afterPath="$PROJECT_DIR$/app/models/quote_request.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/mailers/quote_request_mailer_spec.rb" afterPath="$PROJECT_DIR$/spec/mailers/quote_request_mailer_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/quote_request_spec.rb" afterPath="$PROJECT_DIR$/spec/models/quote_request_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/controllers/admin/quote_requests_controller_spec.rb" afterPath="$PROJECT_DIR$/spec/controllers/admin/quote_requests_controller_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/quote_request_mailer/request_quote_from_provider.text.erb" afterPath="$PROJECT_DIR$/app/views/quote_request_mailer/request_quote_from_provider.text.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/views/organizations/show.html.erb_spec.rb" afterPath="$PROJECT_DIR$/spec/views/organizations/show.html.erb_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dermbids.iws" />
@@ -19,15 +38,15 @@
     <file path="/Gemfile" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380639127704" ignored="false" />
     <file path="/database.yml" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379519556940" ignored="false" />
     <file path="/quote_requests_controller.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380676521592" ignored="false" />
-    <file path="/routes.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380641281865" ignored="false" />
+    <file path="/routes.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380825610960" ignored="false" />
     <file path="/20130812001114_change_quote_requests_formstack_data_to_text.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376266539220" ignored="false" />
     <file path="/20130812005452_add_tattoo_removal_request_to_quote_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376268989717" ignored="false" />
     <file path="/20130812005104_create_tattoo_removal_requests.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376269086111" ignored="false" />
     <file path="/tattoo_removal_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376272991955" ignored="false" />
-    <file path="/quote_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380726531446" ignored="false" />
+    <file path="/quote_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380744913865" ignored="false" />
     <file path="/fragment.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380293715603" ignored="false" />
-    <file path="/index.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376276352343" ignored="false" />
-    <file path="/show.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1376276434624" ignored="false" />
+    <file path="/index.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380901179033" ignored="false" />
+    <file path="/show.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380901118334" ignored="false" />
     <file path="/.gitignore" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379537198719" ignored="false" />
     <file path="/view_new_quote_requests.feature" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379451887042" ignored="false" />
     <file path="/factories_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379512236660" ignored="false" />
@@ -38,7 +57,7 @@
     <file path="/seeds.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380046002310" ignored="false" />
     <file path="/user.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380722317099" ignored="false" />
     <file path="/20130918203952_remove_tattoo_removal_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379536832717" ignored="false" />
-    <file path="/quote_request_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380724136954" ignored="false" />
+    <file path="/quote_request_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380747562119" ignored="false" />
     <file path="/spec_helper.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380599123851" ignored="false" />
     <file path="/users.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380072834646" ignored="false" />
     <file path="/validate_factories_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380052952445" ignored="false" />
@@ -48,12 +67,12 @@
     <file path="/20130920042909_rename_quote_request_patient_user_to_user.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379651449320" ignored="false" />
     <file path="/quote_requests_controller_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380674509681" ignored="false" />
     <file path="/_form.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379814235643" ignored="false" />
-    <file path="/new.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379814068650" ignored="false" />
+    <file path="/new.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380901049907" ignored="false" />
     <file path="/create.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379814335857" ignored="false" />
-    <file path="/Dummy.txt" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380679493182" ignored="false" />
+    <file path="/Dummy.txt" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380908328821" ignored="false" />
     <file path="/index.html.haml" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380138242414" ignored="false" />
-    <file path="/devise_helpers.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379993083011" ignored="false" />
-    <file path="/application_helper.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379990876563" ignored="false" />
+    <file path="/devise_helpers.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380830716787" ignored="false" />
+    <file path="/application_helper.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380903182925" ignored="false" />
     <file path="/application_controller.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1379992184559" ignored="false" />
     <file path="/application.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380030161099" ignored="false" />
     <file path="/organizations.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380654128171" ignored="false" />
@@ -67,8 +86,8 @@
     <file path="/show.html.haml" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380656594730" ignored="false" />
     <file path="/quote_request_mailer.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380223087429" ignored="false" />
     <file path="/const.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380161504511" ignored="false" />
-    <file path="/quote_request_mailer_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380227305637" ignored="false" />
-    <file path="/request_quote_from_provider.text.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380224470022" ignored="false" />
+    <file path="/quote_request_mailer_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380743143487" ignored="false" />
+    <file path="/request_quote_from_provider.text.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380744338757" ignored="false" />
     <file path="/smtp_test.rake" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380310510779" ignored="false" />
     <file path="/simple_smtp_test.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380576200063" ignored="false" />
     <file path="/simple_smtp_test_mailer.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380600797544" ignored="false" />
@@ -103,11 +122,14 @@
     <file path="/clinics.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380674292770" ignored="false" />
     <file path="/clinic_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380722954685" ignored="false" />
     <file path="/20131002003740_rename_organization_to_clinic.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380674488478" ignored="false" />
-    <file path="$PROJECT_DIR$/app/views/admin/organizations/index.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380674727016" ignored="false" />
-    <file path="/clinic_quote_request_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380723696965" ignored="false" />
+    <file path="/clinic_quote_request_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380736772258" ignored="false" />
     <file path="/clinic_quote_requests.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380681826045" ignored="false" />
-    <file path="/clinic_quote_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380723240745" ignored="false" />
+    <file path="/clinic_quote_request.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380744267269" ignored="false" />
     <file path="/clinic.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380723256589" ignored="false" />
+    <file path="/clinic_quote_requests_controller.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380903847209" ignored="false" />
+    <file path="/clinic_quote_requests_controller_spec.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380901841460" ignored="false" />
+    <file path="/20131004142524_change_clinic_quote_requests_clinic_id_to_integer.rb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380897036990" ignored="false" />
+    <file path="/edit.html.erb" changelist="090fe917-affa-4458-a1d9-33c568a1ea2c" time="1380901132033" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,46 +149,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="clinic_quote_request_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/clinic_quote_request_spec.rb">
+      <file leaf-file-name="clinic_quote_requests_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/admin/clinic_quote_requests_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="33" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
+            <state line="2" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quote_request_spec.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/models/quote_request_spec.rb">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="72" selection-start="396" selection-end="396" vertical-scroll-proportion="0.26946107">
+            <state line="17" column="42" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <file leaf-file-name="clinic_quote_request.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/clinic_quote_request.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="25" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0">
+            <state line="9" column="31" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="quote_request.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/quote_request.rb">
+      <file leaf-file-name="quote_requests_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/admin/quote_requests_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="58" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+            <state line="1" column="21" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
+      <file leaf-file-name="clinic_quote_requests_controller_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/controllers/admin/clinic_quote_requests_controller_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="68" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+            <state line="23" column="18" selection-start="926" selection-end="926" vertical-scroll-proportion="0.49704143">
               <folding />
             </state>
           </provider>
@@ -193,22 +215,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/admin/quote_requests/_organizations_for_quote.html.haml" />
-        <option value="$PROJECT_DIR$/spec/factories/clinics.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20131002003740_rename_organization_to_clinic.rb" />
-        <option value="$PROJECT_DIR$/spec/mailers/quote_request_mailer_spec.rb" />
+        <option value="$PROJECT_DIR$/config/environments/test.rb" />
         <option value="$PROJECT_DIR$/spec/controllers/admin/quote_requests_controller_spec.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/admin/quote_requests_controller.rb" />
-        <option value="$PROJECT_DIR$/spec/factories/clinic_quote_requests.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/spec/models/user_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/models/clinic_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/helpers/devise_helpers.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/app/models/clinic_quote_request.rb" />
-        <option value="$PROJECT_DIR$/app/models/clinic.rb" />
-        <option value="$PROJECT_DIR$/spec/models/clinic_quote_request_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/models/quote_request_spec.rb" />
-        <option value="$PROJECT_DIR$/app/models/quote_request.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131004142524_change_clinic_quote_requests_clinic_id_to_integer.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/clinics_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/admin/clinics/_form.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/admin/clinics/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/admin/clinics/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/admin/clinics/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/admin/clinics/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/clinic_quote_requests_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/controllers/admin/clinic_quote_requests_controller_spec.rb" />
       </list>
     </option>
   </component>
@@ -220,10 +242,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
-    <option name="width" value="1301" />
-    <option name="height" value="658" />
+    <option name="x" value="64" />
+    <option name="y" value="-4" />
+    <option name="width" value="1303" />
+    <option name="height" value="687" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -232,7 +254,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -252,6 +274,7 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -259,6 +282,10 @@
               <option name="myItemId" value="dermbids" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -316,7 +343,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="factories" />
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -330,7 +357,61 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -373,10 +454,6 @@
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="quote_requests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -397,6 +474,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clinics" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -429,6 +510,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dermbids" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -474,13 +573,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="options.lastSelected" value="preferences.customizations" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../simple_smtp_test" />
@@ -496,7 +594,42 @@
       <recent name="$PROJECT_DIR$/app/views/quote_requests" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.Development: dermbids">
+  <component name="RunManager" selected="RSpec.Admin::ClinicQuoteRequestsController POST #create with valid attributes as not admin denies access">
+    <configuration default="false" name="Admin::ClinicQuoteRequestsController POST #create with valid attributes as not admin denies access" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="dermbids" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/controllers/admin/clinic_quote_requests_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Admin::ClinicQuoteRequestsController POST #create with valid attributes as not admin denies access" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -549,7 +682,7 @@
     </configuration>
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="" />
+      <module name="dermbids" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
@@ -793,7 +926,9 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyCover" />
       <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyCover" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
@@ -825,14 +960,53 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="Rails.Production: dermbids" />
-      <item index="1" class="java.lang.String" itemvalue="Rails.Development: dermbids" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="4" class="java.lang.String" itemvalue="Rake.routes" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.email_test" />
+    <configuration default="false" name="rspec" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="dermbids" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <list size="8">
+      <item index="0" class="java.lang.String" itemvalue="RSpec.Admin::ClinicQuoteRequestsController POST #create with valid attributes as not admin denies access" />
+      <item index="1" class="java.lang.String" itemvalue="Rails.Production: dermbids" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Development: dermbids" />
+      <item index="3" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.routes" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.email_test" />
+      <item index="7" class="java.lang.String" itemvalue="RSpec.rspec" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="RSpec.Admin::ClinicQuoteRequestsController POST #create with valid attributes as not admin denies access" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
@@ -861,23 +1035,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1301" height="658" extended-state="0" />
+    <frame x="64" y="-4" width="1303" height="687" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3251418" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2490024" sideWeight="0.6866792" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2697526" sideWeight="0.6710775" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3610586" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20239043" sideWeight="0.74014336" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36021507" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289225" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26086956" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25985664" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32437277" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -984,114 +1158,94 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/quote_requests_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="55" selection-start="225" selection-end="225" vertical-scroll-proportion="0.2580645">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/quote_requests/show.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="63" selection-start="302" selection-end="302" vertical-scroll-proportion="0.6277533">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/quote_requests/_organizations_for_quote.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="57" selection-start="240" selection-end="240" vertical-scroll-proportion="0.16519824">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20131002020157_create_clinic_quote_requests.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/controllers/admin/quote_requests_controller_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="61" selection-start="867" selection-end="867" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="18" column="19" selection-start="551" selection-end="551" vertical-scroll-proportion="0.5325444" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/clinic_spec.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/clinics/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="140" selection-end="140" vertical-scroll-proportion="0.12552302">
-          <folding />
-        </state>
+        <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/clinic_quote_request.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/clinics/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="27" selection-start="182" selection-end="182" vertical-scroll-proportion="0.09414226">
-          <folding />
-        </state>
+        <state line="33" column="26" selection-start="509" selection-end="509" vertical-scroll-proportion="0.9378882" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/clinic.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/clinics/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="33" selection-start="167" selection-end="167" vertical-scroll-proportion="0.059880238">
-          <folding />
-        </state>
+        <state line="5" column="26" selection-start="106" selection-end="106" vertical-scroll-proportion="0.1552795" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/clinic_quote_requests.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/clinics/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="132" selection-end="132" vertical-scroll-proportion="0.12552302">
-          <folding />
-        </state>
+        <state line="12" column="31" selection-start="346" selection-end="346" vertical-scroll-proportion="0.3726708" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/factories/quote_requests.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/admin/clinics/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="28" column="60" selection-start="763" selection-end="763" vertical-scroll-proportion="0.6629956" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/clinics_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="12" selection-start="453" selection-end="453" vertical-scroll-proportion="0.43933055">
-          <folding />
-        </state>
+        <state line="71" column="40" selection-start="1796" selection-end="1796" vertical-scroll-proportion="0.7337278" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/quote_requests_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="25" selection-start="1230" selection-end="1230" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/user_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="68" selection-start="279" selection-end="279" vertical-scroll-proportion="0.0">
+        <state line="1" column="21" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/quote_request.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="58" selection-start="330" selection-end="330" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/clinic_quote_request.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="31" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/clinic_quote_request_spec.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="33" selection-start="759" selection-end="759" vertical-scroll-proportion="0.0">
+        <state line="5" column="41" selection-start="172" selection-end="172" vertical-scroll-proportion="0.147929">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/quote_request_spec.rb">
+    <entry file="file://$PROJECT_DIR$/public/404.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="72" selection-start="396" selection-end="396" vertical-scroll-proportion="0.26946107">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0295858" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="42" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/clinic_quote_requests_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/controllers/admin/clinic_quote_requests_controller_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="18" selection-start="926" selection-end="926" vertical-scroll-proportion="0.49704143">
           <folding />
         </state>
       </provider>

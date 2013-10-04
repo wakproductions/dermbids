@@ -13,4 +13,8 @@ class ApplicationController < ActionController::Base
   def current_user_is_admin?
     current_user.user_type==User::TYPES[:admin]
   end
+
+  def render_400_error
+    render status:400, text: "Bad request"
+  end
 end

@@ -1,6 +1,6 @@
 #require 'spec_helper'
 #
-#describe "organizations/show" do
+#describe "clinics/show" do
 #  before(:each) do
 #    @organization = assign(:organization, stub_model(Clinic,
 #      :business_name => "Business Name",

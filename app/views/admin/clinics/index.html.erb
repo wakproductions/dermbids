@@ -1,0 +1,37 @@
+<h1>Listing clinics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Business name</th>
+      <th>Address1</th>
+      <th>Address2</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Postal code</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clinics.each do |clinic| %>
+      <tr>
+        <td><%= clinic.business_name %></td>
+        <td><%= clinic.address1 %></td>
+        <td><%= clinic.address2 %></td>
+        <td><%= clinic.city %></td>
+        <td><%= clinic.state %></td>
+        <td><%= clinic.postal_code %></td>
+        <td><%= link_to 'Show', admin_clinic_path(clinic) %></td>
+        <td><%= link_to 'Edit', edit_admin_clinic_path(clinic) %></td>
+        <td><%= link_to 'Destroy', admin_clinic_path(clinic), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Clinic', new_admin_clinic_path %>
