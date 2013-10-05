@@ -13,7 +13,7 @@ class Admin::ClinicQuoteRequestsController < ApplicationController
       render_400_error and return
     end
 
-    clinic_quote_request = ClinicQuoteRequest.find_or_create_by(clinic: clinic, quote_request: quote_request)
+    quote_request.request_quote_from_clinic(clinic, current_user)
     redirect_to admin_quote_request_path(quote_request)
   end
 
