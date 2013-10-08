@@ -3,6 +3,7 @@ require 'spec_helper'
 describe QuoteRequestsController do
   describe 'GET #new' do
     it 'populates @quote_requests' do
+
       get :new
       assigns(:quote_request).should be_new_record
     end

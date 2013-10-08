@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe QuoteRequest do
   subject(:new_quote_request) { FactoryGirl.build(:new_quote_request) }
-  it { should have_many :clinic_quote_requests }
+  it { should have_many :clinic_communications }
   it { should validate_presence_of :email }
 
 
@@ -46,18 +46,80 @@ describe QuoteRequest do
   end
 
 
-  describe 'sends a quote request email query to clinic' do
+  describe '#request_quote_from_clinic' do
     subject(:new_quote_request) { FactoryGirl.create(:new_quote_request) }
     let(:clinic) { FactoryGirl.create(:clinic, quote_request_contact: FactoryGirl.create(:provider_user))}
     let(:current_admin_user) { FactoryGirl.create(:admin_user) }
 
-    it '#request_quote_from_clinic' do
-      cqr_count = ClinicQuoteRequest.all.count
-      clinic_quote_request = new_quote_request.request_quote_from_clinic(clinic, current_admin_user)
-      ClinicQuoteRequest.all.count.should == cqr_count+1
-      clinic_quote_request.clinic.should == clinic
-      clinic_quote_request.initiated_by_user.should == current_admin_user
+    it 'sets the properties of the ClinicCommunication object' do
+      clinic_communication = new_quote_request.request_quote_from_clinic(clinic, current_admin_user)
+      clinic_communication.communication_type.should == ClinicCommunication::COMMUNICATION_TYPES[:quote_request]
+      clinic_communication.clinic.should == clinic
+      clinic_communication.initiated_by_user.should == current_admin_user
+    end
+
+    it 'sends email request to clinic' do
+      cqr_count = ClinicCommunication.all.count
+      clinic_communication = new_quote_request.request_quote_from_clinic(clinic, current_admin_user)
+      ClinicCommunication.all.count.should == cqr_count+1
       ActionMailer::Base.deliveries.last.to.should == [clinic.quote_request_contact.email]
     end
+
+    it 'changes ClinicCommunication count' do
+      cqr_count = ClinicCommunication.all.count
+      clinic_communication = new_quote_request.request_quote_from_clinic(clinic, current_admin_user)
+      ClinicCommunication.all.count.should == cqr_count+1
+    end
+
+  end
+
+  describe '#request_quote_from_clinic' do
+    subject(:new_quote_request) { FactoryGirl.create(:new_quote_request) }
+    let(:clinic) { FactoryGirl.create(:clinic, quote_request_contact: FactoryGirl.create(:provider_user))}
+    let(:current_admin_user) { FactoryGirl.create(:admin_user) }
+
+    it 'sets the properties of the ClinicCommunication object' do
+      clinic_communication = new_quote_request.request_quote_from_clinic(clinic, current_admin_user)
+      clinic_communication.communication_type.should == ClinicCommunication::COMMUNICATION_TYPES[:quote_request]
+      clinic_communication.clinic.should == clinic
+      clinic_communication.initiated_by_user.should == current_admin_user
+    end
+
+    it 'sends email request to clinic' do
+      clinic_communication = new_quote_request.request_quote_from_clinic(clinic, current_admin_user)
+      ActionMailer::Base.deliveries.last.to.should == [clinic.quote_request_contact.email]
+    end
+
+    it 'changes ClinicCommunication count' do
+      cqr_count = ClinicCommunication.all.count
+      clinic_communication = new_quote_request.request_quote_from_clinic(clinic, current_admin_user)
+      ClinicCommunication.all.count.should == cqr_count+1
+    end
+
+  end
+
+  describe '#send_patient_details_to_clinic' do
+    subject(:new_quote_request) { FactoryGirl.create(:new_quote_request) }
+    let(:clinic) { FactoryGirl.create(:clinic, quote_request_contact: FactoryGirl.create(:provider_user))}
+    let(:current_admin_user) { FactoryGirl.create(:admin_user) }
+
+    it 'sets the properties of the ClinicCommunication object' do
+      clinic_communication = new_quote_request.send_patient_details_to_clinic(clinic, current_admin_user)
+      clinic_communication.communication_type.should == ClinicCommunication::COMMUNICATION_TYPES[:send_patient_details]
+      clinic_communication.clinic.should == clinic
+      clinic_communication.initiated_by_user.should == current_admin_user
+    end
+
+    it 'sends email request to clinic' do
+      clinic_communication = new_quote_request.send_patient_details_to_clinic(clinic, current_admin_user)
+      ActionMailer::Base.deliveries.last.to.should == [clinic.quote_request_contact.email]
+    end
+
+    it 'changes ClinicCommunication count' do
+      cqr_count = ClinicCommunication.all.count
+      clinic_communication = new_quote_request.send_patient_details_to_clinic(clinic, current_admin_user)
+      ClinicCommunication.all.count.should == cqr_count+1
+    end
+
   end
 end

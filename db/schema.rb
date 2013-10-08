@@ -11,17 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131004142524) do
+ActiveRecord::Schema.define(version: 20131007023706) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "clinic_quote_requests", force: true do |t|
+  create_table "clinic_communications", force: true do |t|
     t.integer  "initiated_by_user_id"
     t.integer  "quote_request_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "clinic_id"
+    t.integer  "communication_type"
   end
 
   create_table "clinics", force: true do |t|

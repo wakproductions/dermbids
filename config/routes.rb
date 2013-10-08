@@ -4,7 +4,7 @@ Dermbids::Application.routes.draw do
   resources :quote_requests, only: [:new, :create]
   namespace :admin do
     resources :quote_requests, only: [:index, :show]
-    resources :clinic_quote_requests, only: [:index, :create]
+    resources :clinic_communications, only: [:index, :create]
     resources :clinics
   end
 
