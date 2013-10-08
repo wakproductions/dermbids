@@ -1,0 +1,7 @@
+%div{style:'text-align:right;'}
+  = link_to "Sign Out", destroy_user_session_path, :method=>:delete
+%h1 List of incoming quote requests
+- @quote_requests.each do |q|
+  %p
+    =link_to q.created_at, admin_quote_request_path(:id=>q.id)
+    | #{q.email} | #{q.full_name} | #{q.postal_code} | #{q.formstack_photo_url}

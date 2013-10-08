@@ -1,0 +1,14 @@
+Hello <%= @clinic.quote_request_contact.first_name %>,
+
+Thank you for providing you tattoo removal estimate for <PATIENT> through Dermbids. Feel free to contact this patient directly.
+Please let me know if <PATIENT> scheduled a visit.
+
+Here are the contact information and details:
+
+Name: <%= @quote_request.full_name %>
+
+Patient's Email: <%= @quote_request.email %>
+
+Postal Code: <%= @quote_request.postal_code %>
+
+Image URL: <%= @quote_request.formstack_photo_url %>

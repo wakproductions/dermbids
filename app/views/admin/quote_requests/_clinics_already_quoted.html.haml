@@ -1,0 +1,16 @@
+#clinics-already-quoted
+  %h3 These clinics you have already requested a quote from:
+  -@clinics.already_quote_requested(@quote_request).each do |o|
+    .clinic-detail
+      = "#{o.business_name} | #{o.city} | #{o.state} | "
+      = form_tag admin_clinic_communications_path do
+        =hidden_field_tag 'quote_request_id', @quote_request.id
+        =hidden_field_tag 'clinic_id', o.id
+        =hidden_field_tag 'type', ClinicCommunication::COMMUNICATION_TYPES[:quote_request]
+        =submit_tag 'Resend Quote Request'
+
+      = form_tag admin_clinic_communications_path do
+        =hidden_field_tag 'quote_request_id', @quote_request.id
+        =hidden_field_tag 'clinic_id', o.id
+        =hidden_field_tag 'type', ClinicCommunication::COMMUNICATION_TYPES[:send_patient_details]
+        =submit_tag 'Send Full Details'

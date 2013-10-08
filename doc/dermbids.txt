@@ -1,0 +1,37 @@
+﻿Dermbids Todo
+-------------
+1. Add salutation (Dr., Mr., etc.) to Users table.
+
+
+
+Example post string from Dermbids:
+FormID=1545634&UniqueID=115309819&21100796=http%3A%2F%2Ffiles.formstack.com%2Fuploads%2F1545634%2F21100796%2F115309819%2F21100796_img_20130723_183117.jpg&21100806=Yes&21100801=&21100808=It%27s+too+heavy&21100811=Tail&21100815=23+nanometers&21100816=Amateur&21100821=Less+than+1+year+ago&21100827=Red%0APurple&21100845=&21100837=Fair&21100847=No&21100896=&21100866=&21100857=first+%3D+James%0Alast+%3D+Conway&21100858=winston%40lunker.com&21100860=8&21100861=46240&21100862=Twitter
+FormID=1545634&
+UniqueID=115309819&
+21100796=http%3A%2F%2Ffiles.formstack.com%2Fuploads%2F1545634%2F21100796%2F115309819%2F21100796_img_20130723_183117.jpg&
+21100806=Yes&
+21100801=&
+21100808=It%27s+too+heavy&
+21100811=Tail&
+21100815=23+nanometers&
+21100816=Amateur&
+21100821=Less+than+1+year+ago&
+21100827=Red%0APurple&
+21100845=&
+21100837=Fair&
+21100847=No&
+21100896=&
+21100866=&
+21100857=first+%3D+James%0Alast+%3D+Conway&
+21100858=winston%40lunker.com&
+21100860=8&
+21100861=46240&
+21100862=Twitter
+
+
+curl -F "FormID=1545634" -F "UniqueID=115309819" -F "21100796=http://files.formstack.com/uploads/1545634/21100796/115309819/21100796_img_20130723_183117.jpg" -F "21100806=Yes" -F "21100801=" -F "21100808=It%27s+too+heavy" -F "21100811=Tail" -F "21100815=23+nanometers" -F "21100816=Amateur" -F "21100821=Less+than+1+year+ago" -F "21100827=Red Purple" -F "21100845=" -F "21100837=Fair" -F "21100847=No" -F "21100896=" -F "21100866=" -F "21100857=first = James last = Conway" -F "21100858=winston@lunker.com" -F "21100860=8" -F "21100861=46240" -F "21100862=Twitter" "http://localhost:4000/formstack/quote_requests"
+
+
+Logo
+----
+Bid paddle, lab coat, doctor bidding, a bunch of doctors racing?

@@ -1,0 +1,22 @@
+%p#notice
+  =notice
+
+%p
+  %strong Email:
+  =@quote_request.email
+
+%p
+  %strong Full Name:
+  =@quote_request.full_name
+
+%p
+  %strong Postal Code:
+  =@quote_request.postal_code
+
+%p
+  %strong Image URL:
+  =@quote_request.formstack_photo_url
+
+#select-clinics-for-quote
+  = render partial: 'admin/quote_requests/clinics_already_quoted'
+  = render partial: 'admin/quote_requests/clinics_not_yet_quoted'

@@ -14,7 +14,15 @@ Dermbids::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+  ActionMailer::Base.smtp_settings = {
+      :address => "smtp.1and1.com",
+      :enable_starttls_auto => true,
+      :port => 587,
+      :user_name => ENV["ONEANDONE_EMAIL_USERNAME"],
+      #:user_name => 'badusername',
+      :password => ENV['ONEANDONE_EMAIL_PASSWORD']
+  }
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -26,4 +34,7 @@ Dermbids::Application.configure do
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
   config.assets.debug = true
+
+  # Added as recommended by the Devise documentation for devise mailer
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end

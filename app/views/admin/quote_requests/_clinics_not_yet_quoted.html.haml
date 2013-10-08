@@ -1,0 +1,11 @@
+#clinics-not-yet-quoted
+  %h3 Select which clinics you would like to send a quote:
+  -@clinics.not_yet_quote_requested(@quote_request).each do |o|
+    .clinic-detail
+      = "#{o.business_name} | #{o.city} | #{o.state} | "
+      = form_tag admin_clinic_communications_path do
+        =hidden_field_tag 'quote_request_id', @quote_request.id
+        =hidden_field_tag 'clinic_id', o.id
+        =hidden_field_tag 'type', ClinicCommunication::COMMUNICATION_TYPES[:quote_request]
+        =submit_tag 'Request Quote'
+      /= link_to("Request Quote", { controller: 'admin/clinic_quote_requests', action: 'create'}, method: :post, quote_request_id: @quote_request.id, clinic_id: o.id)

@@ -1,0 +1,91 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="809" measuredH="608" mockupW="800" mockupH="600">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="9" y="8" w="800" h="600" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Dermbids%0Ahttp%3A//bids.dermbids.com/admin/quote_requests</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Image" x="16" y="84" w="147" h="30" measuredW="337" measuredH="61" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/dermbids_logo.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::Canvas" x="9" y="108" w="800" h="29" measuredW="100" measuredH="70" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::ButtonBar" x="16" y="109" w="-1" h="-1" measuredW="293" measuredH="27" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Quote%20Requests%3A%20New%20%7C%20Active%20%7C%20Archived</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Image" x="51" y="158" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>QR1</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Link" x="178" y="188" w="-1" h="-1" measuredW="66" measuredH="19" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>James%20Kirk</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Link" x="299" y="188" w="-1" h="-1" measuredW="120" measuredH="19" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>jkirk@enterprise.org</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::Label" x="477" y="187" w="-1" h="-1" measuredW="144" measuredH="21" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Fri%20Sep%2013%2C%202013%207%3A52pm</text>
+      </controlProperties>
+    </control>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Canvas" x="36" y="252" w="709" h="112" measuredW="100" measuredH="70" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>14540253</color>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Image" x="51" y="267" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>QR2</text>
+      </controlProperties>
+    </control>
+    <control controlID="11" controlTypeID="com.balsamiq.mockups::Link" x="178" y="297" w="-1" h="-1" measuredW="104" measuredH="19" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Angus%20MacGyver</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::Link" x="299" y="297" w="-1" h="-1" measuredW="170" measuredH="19" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>mac@phoenix-foundation.org</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="477" y="296" w="-1" h="-1" measuredW="151" measuredH="21" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Sat%20Sep%2014%2C%202013%209%3A23am</text>
+      </controlProperties>
+    </control>
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::Image" x="51" y="379" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>QR1</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Link" x="178" y="409" w="-1" h="-1" measuredW="79" measuredH="19" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tony%20Almeida</text>
+      </controlProperties>
+    </control>
+    <control controlID="16" controlTypeID="com.balsamiq.mockups::Link" x="299" y="409" w="-1" h="-1" measuredW="127" measuredH="19" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>tony.almeida@ctu.gov</text>
+      </controlProperties>
+    </control>
+    <control controlID="17" controlTypeID="com.balsamiq.mockups::Label" x="477" y="408" w="-1" h="-1" measuredW="148" measuredH="21" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Sat%20Sep%2014%2C%202013%206%3A10pm</text>
+      </controlProperties>
+    </control>
+    <control controlID="18" controlTypeID="com.balsamiq.mockups::StickyNote" x="358" y="62" w="175" h="123" measuredW="109" measuredH="123" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>The%20%22Archived%20Quote%20Requests%22%20will%20appear%20the%20same%2C%20except%20that%20these%20items%20will%20be%20marked%20as%20closed.</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
