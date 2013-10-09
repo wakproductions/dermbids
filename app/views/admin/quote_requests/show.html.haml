@@ -15,7 +15,7 @@
 
 %p
   %strong Image URL:
-  =@quote_request.formstack_photo_url
+  =image_tag(asset_path(@quote_request.formstack_photo_url), style: "height:200px;width:200px")
 
 #select-clinics-for-quote
   = render partial: 'admin/quote_requests/clinics_already_quoted'
