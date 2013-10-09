@@ -10,7 +10,7 @@
           first_name: first_name,
           last_name: last_name,
           #password: (admin_user.encrypted_password.present? ? nil : Devise.friendly_token.first(8))
-          password: dermbids
+          password: 'dermbids'
       }
   )
   admin_user.save!
