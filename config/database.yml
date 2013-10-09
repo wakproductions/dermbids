@@ -25,7 +25,11 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+  adapter: postgresql
+  host:     <%= ENV['DERMBIDS_DB_HOST'] %>
+  database: <%= ENV['DERMBIDS_DB_NAME'] %>
+  username: <%= ENV['DERMBIDS_DB_USERNAME'] %>
+  password: <%= ENV['DERMBIDS_DB_PASSWORD'] %>
+  port:     <%= ENV['DERMBIDS_DB_PORT'] %>
   pool: 5
   timeout: 5000
