@@ -28,10 +28,13 @@ describe QuoteRequestMailer do
       mail.body.encoded.should match(clinic.quote_request_contact.first_name)
     end
 
-    pending "contains the patient's masked full name" do
+    it "contains the patient's masked full name" do
       # This test is giving me trouble - I get a "warning: redundant nested repeat operator" whenever I run this spec.
       # May be an RSpec bug
-      mail.body.encoded.should match("#{quote_request.masked_full_name}")
+      #masked_name = quote_request.masked_full_name
+      mail.body.encoded.should match(Regexp.escape(quote_request.masked_full_name))
+      #mail.body.encoded.should match("Abnercromnie G**********")
+      #true.should == true
     end
 
     it 'does not contain the recipient full name' do
