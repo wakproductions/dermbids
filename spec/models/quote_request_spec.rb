@@ -5,6 +5,14 @@ describe QuoteRequest do
   it { should have_many :clinic_communications }
   it { should validate_presence_of :email }
 
+  # Photo attachment related
+  it { should have_attached_file(:photo) }
+  it { should validate_attachment_presence(:photo) }
+  it { should validate_attachment_size(:photo).less_than(15.megabytes) }
+  it { should validate_attachment_content_type(:photo)
+              .allowing('image/png', 'image/gif', 'image/jpg', 'image/jpeg')
+              .rejecting('text/plain', 'text/xml') }
+
 
   describe '#masked_full_name' do
     req = FactoryGirl.build(:new_quote_request, full_name: 'James T. Kirk')

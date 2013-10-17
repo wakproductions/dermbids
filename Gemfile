@@ -31,8 +31,9 @@ gem 'haml'
 
 
 # Dermbids gems
-gem 'devise'
-
+gem 'devise', '~>3.0'
+gem "paperclip", "~> 3.0"
+gem 'aws-sdk' # should be ~> 1.1
 
 group :development, :test do
   gem 'rspec-rails'

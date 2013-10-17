@@ -17,7 +17,7 @@ class QuoteRequestsController < ApplicationController
 
 private
   def quote_request_params
-    params.require(:quote_request).permit(:email, :full_name, :postal_code, :formstack_photo_url)
+    params.require(:quote_request).permit(:email, :full_name, :postal_code, :photo, :formstack_photo_url)
   end
 
 #  All of the commented below haz been deprecated because we are no longer using Formstack

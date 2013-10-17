@@ -1,4 +1,4 @@
-<%= form_for(@quote_request) do |f| %>
+<%= form_for(@quote_request, :html => { :multipart => true }) do |f| %>
   <% if @quote_request.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@quote_request.errors.count, "error") %> prohibited this quote request from being saved:</h2>
@@ -23,15 +23,10 @@
     <%= f.label :postal_code %><br>
     <%= f.text_field :postal_code %>
   </div>
-  <div class="field">
-    <%= f.label :formstack_photo_url %><br>
-    <%=
-        f.select(
-                :formstack_photo_url,
-                ['sample_tattoo_01.jpg', 'sample_tattoo_02.jpg', 'sample_tattoo_03.jpg', 'sample_tattoo_04.jpg']
-        )
-    %>
-  </div>
+    <div class="field">
+      <%= f.label :photo %><br>
+      <%= f.file_field :photo, accept: 'image/*' %>
+    </div>
   <div class="actions">
     <%= f.submit %>
   </div>

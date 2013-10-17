@@ -3,6 +3,15 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+  #TODO-Test Write a test for this
+  def after_sign_in_path_for(resource)
+    if current_user_is_admin?
+      admin_quote_requests_path
+    else
+      root_path
+    end
+  end
+
   def authenticate_admin_user!
     unless user_signed_in? && current_user_is_admin?
       flash[:error] = "You must be logged in as an administrator to access this section"
