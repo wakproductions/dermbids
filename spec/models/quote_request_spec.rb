@@ -5,6 +5,10 @@ describe QuoteRequest do
   it { should have_many :clinic_communications }
   it { should validate_presence_of :email }
 
+  it 'should default to a status of :new' do
+    QuoteRequest.new.status.should eq(QuoteRequest::STATUS[:new])
+  end
+
   # Photo attachment related
   it { should have_attached_file(:photo) }
   it { should validate_attachment_presence(:photo) }

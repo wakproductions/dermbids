@@ -1,4 +1,10 @@
 class QuoteRequest < ActiveRecord::Base
+  STATUS={
+      new: 100,
+      active: 200,
+      archived: 300
+  }
+
   belongs_to :user
   has_many :clinic_communications
 
@@ -22,6 +28,11 @@ class QuoteRequest < ActiveRecord::Base
   validates :photo, attachment_content_type: { content_type: ['image/png', 'image/gif', 'image/jpg', 'image/jpeg'] }
   ###### Paperclip related settings END #####
 
+  after_initialize do |r|
+    if new_record?
+      r.status = STATUS[:new]
+    end
+  end
 
   def find_or_create_user
     self.user = User.find_or_create_by(email: self.email) if user.nil? && self.email.present?
