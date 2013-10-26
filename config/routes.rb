@@ -1,8 +1,10 @@
 Dermbids::Application.routes.draw do
+  root to: "home#index"
 
   devise_for :users
   resources :quote_requests, only: [:new, :create]
   namespace :admin do
+    get '/', to: 'quote_requests#index', as: 'root'
     resources :quote_requests, only: [:index, :show]
     resources :clinic_communications, only: [:index, :create]
     resources :clinics

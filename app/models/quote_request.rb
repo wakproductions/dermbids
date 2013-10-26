@@ -34,6 +34,21 @@ class QuoteRequest < ActiveRecord::Base
     end
   end
 
+  # Override the status setter so that we can pass it either a string or value
+  def status=(value)
+    if value.is_a? Symbol
+      write_attribute(:status, QuoteRequest::STATUS[value])
+    elsif value.is_a? String
+      write_attribute(:status, QuoteRequest::STATUS[value.to_sym])
+    else
+      write_attribute(:status, value)
+    end
+  end
+
+  def status
+    read_attribute(:status)
+  end
+
   def find_or_create_user
     self.user = User.find_or_create_by(email: self.email) if user.nil? && self.email.present?
   end

@@ -17,6 +17,30 @@ describe QuoteRequest do
               .allowing('image/png', 'image/gif', 'image/jpg', 'image/jpeg')
               .rejecting('text/plain', 'text/xml') }
 
+  describe '#status= setter' do
+    let(:quote_request) { FactoryGirl.build(:new_quote_request) }
+    before do
+      quote_request.status=nil
+    end
+
+    it 'should accept a string' do
+      expect {
+        quote_request.status = "active"
+      }.to change { quote_request.status }.from(nil).to(QuoteRequest::STATUS[:active])
+    end
+
+    it 'should accept a symbol' do
+      expect {
+        quote_request.status = :active
+      }.to change { quote_request.status }.from(nil).to(QuoteRequest::STATUS[:active])
+    end
+
+    it 'should accept a number' do
+      expect {
+        quote_request.status = QuoteRequest::STATUS[:active]  # this constant value should be a number
+      }.to change { quote_request.status }.from(nil).to(QuoteRequest::STATUS[:active])
+    end
+  end
 
   describe '#masked_full_name' do
     req = FactoryGirl.build(:new_quote_request, full_name: 'James T. Kirk')
@@ -28,7 +52,6 @@ describe QuoteRequest do
     req.full_name = 'Spock'
     req.masked_full_name.should == 'Spock**********'
   end
-
 
   describe 'automatically associates with a User' do
     context "when the submitter's account exists" do

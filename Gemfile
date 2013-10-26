@@ -36,6 +36,7 @@ gem "paperclip", "~> 3.0"
 gem 'aws-sdk' # should be ~> 1.1
 
 group :development, :test do
+  gem 'cucumber-rails', :require => false
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
@@ -45,13 +46,8 @@ end
 
 group :test do
   gem 'capybara'
-end
-
-group :test do
-  gem 'rspec'
-  gem 'rspec-rails'
-  gem 'cucumber'
-  gem 'webrat'
+#  gem 'capybara-webkit'
+  gem 'database_cleaner'
 end
 
 group :production do
