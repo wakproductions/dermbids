@@ -8,6 +8,10 @@ When(/^I click "(.+)"$/) do |link|
   click_link link
 end
 
+Then(/^I should see "(.+)"$/) do |content|
+  page.should have_content(content)
+end
+
 #Given /^PENDING/ do |arg1|
 #  pending
 #end

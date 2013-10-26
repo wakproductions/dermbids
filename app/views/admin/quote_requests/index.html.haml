@@ -1,6 +1,14 @@
+%p#notice
+  =notice
+
 %div{style:'text-align:right;'}
   = link_to "Sign Out", destroy_user_session_path, :method=>:delete
-%h1 List of incoming quote requests
+%h1= "#{status_filter_name} Quote Requests"
+%div= raw("Filter by status: " +                                                             |
+      "#{link_to("New", admin_quote_requests_path(filter: {status: :new}))} | " +          |
+      "#{link_to("Active", admin_quote_requests_path(filter: {status: :active}))} | " +    |
+      "#{link_to("Archived", admin_quote_requests_path(filter: {status: :archived}))}")     |
+
 - @quote_requests.each do |q|
   %p
     =link_to(image_tag(q.photo.url(:size320), style: "width:150px;"), admin_quote_request_path(id:q.id))

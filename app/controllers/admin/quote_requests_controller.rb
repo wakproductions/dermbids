@@ -3,13 +3,23 @@ class Admin::QuoteRequestsController < ApplicationController
 
   # GET /admin/quote_requests
   def index
-    @quote_requests = QuoteRequest.all
+    @filter = filter_params  # so that we can highlight the currently selected view
+    @quote_requests = QuoteRequest.filter(@filter)
   end
 
   # GET /admin/quote_requests/:id
   def show
     @quote_request = QuoteRequest.find(params[:id])
     @clinics = Clinic.all # This will later be changed to encompass only clinics in the local area for this quote request
+  end
+
+private
+  def filter_params
+    if params.include? :filter
+      params[:filter]
+    else
+      { status: :new }  # show only the new quote requests by default
+    end
   end
 
 end

@@ -34,6 +34,11 @@ class QuoteRequest < ActiveRecord::Base
     end
   end
 
+  def self.filter(filter_hash={})
+    result = all
+    result.where(status: QuoteRequest::STATUS[filter_hash[:status].to_sym]) if filter_hash.include? :status
+  end
+
   # Override the status setter so that we can pass it either a string or value
   def status=(value)
     if value.is_a? Symbol
