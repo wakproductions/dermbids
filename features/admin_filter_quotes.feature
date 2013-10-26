@@ -18,13 +18,19 @@ Feature: As an admin I am able to organize the visible quotes by its status with
     When I click "New"
     Then I should see "mcyrus-new@example.com"
     And I should see "Miley Cyrus"
+    And I should not see "Justin Timberlake"
+    And I should not see "Tom Jones"
 
   Scenario: I filter for only the newly submitted items
     When I click "Active"
     Then I should see "jtimberlake-active@example.com"
     And I should see "Justin Timberlake"
+    And I should not see "Miley Cyrus"
+    And I should not see "Tom Jones"
 
   Scenario: I filter for only the newly submitted items
     When I click "Archived"
     Then I should see "tjones-archived@example.com"
     And I should see "Tom Jones"
+    And I should not see "Miley Cyrus"
+    And I should not see "Justin Timberlake"
