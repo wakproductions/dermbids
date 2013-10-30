@@ -106,6 +106,12 @@ describe QuoteRequest do
       ClinicCommunication.all.count.should == cqr_count+1
     end
 
+    it 'changes the status of the QuoteRequest from new to active' do
+      expect {
+        new_quote_request.request_quote_from_clinic(clinic, current_admin_user)
+      }.to change { new_quote_request.status }.from(QuoteRequest::STATUS[:new]).to(QuoteRequest::STATUS[:active])
+    end
+
   end
 
   describe '#request_quote_from_clinic' do

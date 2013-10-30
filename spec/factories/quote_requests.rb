@@ -23,5 +23,6 @@ FactoryGirl.define do
 
     # Uncomment the below if you actually want to test the photo attachment system
     #photo File.new(Rails.root.join('spec', 'factories', 'files', 'sample_tattoo_01.jpg'), 'r')
+    #photo fixture_file_upload(Rails.root.join('spec', 'factories', 'files', 'sample_tattoo_01.jpg'))
   end
 end

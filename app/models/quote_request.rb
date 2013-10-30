@@ -70,7 +70,9 @@ class QuoteRequest < ActiveRecord::Base
         clinic: clinic,
         quote_request: self
     )
-    clinic_communication.send_email_to_clinic # TODO this may have to be refactored to become thread safe
+    if clinic_communication.send_email_to_clinic then # TODO this may have to be refactored to become thread safe
+      self.update(status: STATUS[:active])
+    end
     return clinic_communication
   end
 
