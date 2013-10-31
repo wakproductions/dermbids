@@ -27,6 +27,7 @@
     <orderEntry type="library" scope="PROVIDED" name="atomic (v1.1.14, rbenv: 2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="aws-sdk (v1.11.1, rbenv: 2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt-ruby (v3.1.2, rbenv: 2.0.0-p247) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.0.0.0.rc2, rbenv: 2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.1.4, rbenv: 2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v1.3.5, rbenv: 2.0.0-p247) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="capybara (v2.1.0, rbenv: 2.0.0-p247) [gem]" level="application" />

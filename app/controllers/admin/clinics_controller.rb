@@ -1,4 +1,4 @@
-class Admin::ClinicsController < ApplicationController
+class Admin::ClinicsController < AdminController
   before_action :set_clinic, only: [:show, :edit, :update, :destroy]
 
   # GET /clinics

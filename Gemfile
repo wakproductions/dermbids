@@ -34,6 +34,7 @@ gem 'haml'
 gem 'devise', '~>3.0'
 gem "paperclip", "~> 3.0"
 gem 'aws-sdk' # should be ~> 1.1
+gem 'bootstrap-sass', '~> 3.0.0.0.rc'
 
 group :development, :test do
   gem 'cucumber-rails', :require => false
@@ -46,7 +47,6 @@ end
 
 group :test do
   gem 'capybara'
-#  gem 'capybara-webkit'
   gem 'database_cleaner'
 end
 

@@ -1,4 +1,4 @@
-class Admin::ClinicCommunicationsController < ApplicationController
+class Admin::ClinicCommunicationsController < AdminController
   #before_action :set_clinic_quote_request, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_admin_user!
   protect_from_forgery except: :create

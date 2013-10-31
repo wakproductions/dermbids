@@ -1,4 +1,4 @@
-class Admin::QuoteRequestsController < ApplicationController
+class Admin::QuoteRequestsController < AdminController
   before_action :authenticate_admin_user!
 
   # GET /admin/quote_requests

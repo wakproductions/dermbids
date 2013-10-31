@@ -1,0 +1,60 @@
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+/* Set the fixed height of the footer here */
+#footer {
+  margin-top: 30px;
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+.container .credit {
+  margin: 20px 0;
+}
+
+#footer > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
