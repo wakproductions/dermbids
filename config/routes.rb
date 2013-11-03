@@ -5,7 +5,7 @@ Dermbids::Application.routes.draw do
   resources :quote_requests, only: [:new, :create]
   namespace :admin do
     get '/', to: 'quote_requests#index', as: 'root'
-    resources :quote_requests, only: [:index, :show]
+    resources :quote_requests, only: [:index, :show, :update]
     resources :clinic_communications, only: [:index, :create]
     resources :clinics
   end

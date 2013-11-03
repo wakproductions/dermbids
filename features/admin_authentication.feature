@@ -7,16 +7,23 @@ Feature: Authentication
 # pretty thoroughly tested to work already. But I coped this code from another project and I'm
 # leaving it here just in case its needed later for helping test later authentication features.
 
+  Background:
+    Given an administrator account is created with the email "administrator-jones@example.com" and password "secretpassword"
+    And I am not logged in
 
-#  Background:
-#    Given an administrator account is created with the email "jones@example.com" and password "secretpassword"
-#    And I am not logged in
+  Scenario: I should not be able to access the protected areas of the site when not authenticated
+    When I visit the administrator home page
+    Then I should be redirected to the user sign in page
+    And I should see "Sign in"
+    And I should see "Email"
+    And I should see "Password"
+    And I should not see "Dermbids Administration"
 
-#  Scenario: Successfully log into the application
-#    When I try to login as "jones@example.com" with password "secretpassword"
-#    Then I should see "Signed in successfully"
-#    And I should be on the homepage
-#    And I should see "Log out"
+  Scenario: I should be able to log in
+    When I log in as "administrator-jones@example.com" with password "secretpassword"
+    Then I should be redirected to the administrator quote request summary page
+    And I should see "Dermbids Administration"
+
 
 #  Scenario: Successfully log out of the application
 #    Given I am logged in as "jones@example.com" with password "secretpassword"

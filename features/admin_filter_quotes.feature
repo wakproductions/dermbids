@@ -1,4 +1,4 @@
-Feature: As an admin I am able to organize the visible quotes by its status within the processing.
+Feature:
   As an admin
   I want to have separate "tabs" organize the quote requests by status - new, active, and archived
   So that I can see only quote requests relevant to what I'm doing

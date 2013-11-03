@@ -1,29 +1,31 @@
-%p#notice
-  =notice
+%div.spacer{style:"height: 15px;"}
+.row
+  .col-sm-4
+    -if @quote_request.photo
+      =link_to(image_tag(@quote_request.photo.url(:size320), style: "width:100%;"), @quote_request.photo.url)
+    -else
+      .missing-photo No photo available
+  .col-sm-8
+    %p
+      ="#{@quote_request.full_name} (#{@quote_request.email})"
+    %p
+      %strong Postal Code:
+      =@quote_request.postal_code
+    %p{style: "display: inline"}
+      Status:
+      .btn-group
+        -current_status_button
+        =form_for @quote_request, url: admin_quote_request_path(@quote_request), html: {id: 'change-status-form'} do |f|
+          =f.hidden_field :status
+        %ul.dropdown-menu{role: "menu"}
+          -QuoteRequest::STATUS.keys.each do |k|
+            %li= link_to(k.capitalize, "#", :"data-value"=>k, :class=>"change-status-link")
+:coffee
+  $('.change-status-link').click ->
+    $('#change-status-form input#quote_request_status').val($(this).attr('data-value'))
+    $('#change-status-form').submit()
 
-%p
-  %strong Email:
-  =@quote_request.email
 
-%p
-  %strong Full Name:
-  =@quote_request.full_name
-
-%p
-  %strong Postal Code:
-  =@quote_request.postal_code
-
-%p
-  %strong Image URL:
-  =image_tag(@quote_request.photo.url(:size320), style: "width:320px;") if @quote_request.photo
-
-%h1 Status and Comment History
-
-%p
-  %strong Current Status of Quote Request:
-  =QuoteRequest::STATUS.key(@quote_request.status).capitalize
-
-%h1 Send Quote to Clinic
 
 #select-clinics-for-quote
   = render partial: 'admin/quote_requests/clinics_already_quoted'

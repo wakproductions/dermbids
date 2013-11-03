@@ -10,6 +10,7 @@ class QuoteRequest < ActiveRecord::Base
   has_many :clinic_communications
 
   validates :email, presence: true
+  validates :status, inclusion: {in: STATUS.values}, allow_nil: false
 
   ###### BEGIN Paperclip related settings #####
   has_attached_file :photo,

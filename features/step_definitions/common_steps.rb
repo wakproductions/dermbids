@@ -8,12 +8,24 @@ When(/^I click "(.+)"$/) do |link|
   click_link link
 end
 
+When(/^I click the first image link$/) do
+  find('.quote-request-summary img').click
+end
+
 Then(/^I should see "(.+)"$/) do |content|
   page.should have_content(content)
 end
 
 Then(/^I should not see "(.+)"$/) do |content|
   page.should_not have_content(content)
+end
+
+Then(/^I should be redirected to (.*?)$/) do |webpage|
+  current_path.should == path_to(webpage)
+end
+
+Then(/^I should be on (.*?)$/) do |webpage|
+  step "I should be redirected to #{webpage}"
 end
 
 #Given /^PENDING/ do |arg1|
