@@ -1,4 +1,8 @@
-module Admin::QuoteRequestsControllerHelper
+module Admin::AdminSectionHelper
+  def status_filter_name
+    @filter[:status].to_s.capitalize
+  end
+
   def current_status_button
     button_class = case QuoteRequest::STATUS.key(@quote_request.status)
                      when :new then "btn-warning"
@@ -13,4 +17,11 @@ module Admin::QuoteRequestsControllerHelper
     end
   end
 
+  def city_from_zip_code(zip)
+    begin
+      zip.to_region || "Unknown City"
+    rescue
+      "Unknown City"
+    end
+  end
 end

@@ -35,6 +35,7 @@ gem 'devise', '~>3.0'
 gem "paperclip", "~> 3.0"
 gem 'aws-sdk' # should be ~> 1.1
 gem 'bootstrap-sass', '~> 3.0.0.0.rc'
+gem 'area' # '~> 0.10.0'
 
 group :development, :test do
   gem 'cucumber-rails', :require => false

@@ -14,6 +14,6 @@
         %br/
         ="#{q.full_name} (#{q.email})"
         %br/
-        ="ZIP Code: #{q.postal_code}"
+        ="Postal Code: #{q.postal_code} (#{city_from_zip_code(q.postal_code)})"
 - else
   %p No quote requests to display
