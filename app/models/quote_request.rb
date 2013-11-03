@@ -2,7 +2,8 @@ class QuoteRequest < ActiveRecord::Base
   STATUS={
       new: 100,
       active: 200,
-      archived: 300
+      archived: 300,
+      revisit: 400
   }
 
   belongs_to :user

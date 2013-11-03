@@ -1,16 +1,19 @@
-%p#notice
-  =notice
+%ul.nav.nav-tabs
+  %li= link_to("New", admin_quote_requests_path(filter: {status: :new}))
+  %li= link_to("Active", admin_quote_requests_path(filter: {status: :active}))
+  %li= link_to("Archived", admin_quote_requests_path(filter: {status: :archived}))
+  %li= link_to("Revisit Later", admin_quote_requests_path(filter: {status: :revisit}))
 
-%div{style:'text-align:right;'}
-  = link_to "Sign Out", destroy_user_session_path, :method=>:delete
-%h1= "#{status_filter_name} Quote Requests"
-%div= raw("Filter by status: " +                                                             |
-      "#{link_to("New", admin_quote_requests_path(filter: {status: :new}))} | " +          |
-      "#{link_to("Active", admin_quote_requests_path(filter: {status: :active}))} | " +    |
-      "#{link_to("Archived", admin_quote_requests_path(filter: {status: :archived}))}")     |
-
-- @quote_requests.each do |q|
-  %p
-    =link_to(image_tag(q.photo.url(:size320), style: "width:150px;"), admin_quote_request_path(id:q.id))
-    =link_to q.created_at, admin_quote_request_path(:id=>q.id)
-    | #{q.email} | #{q.full_name} | #{q.postal_code} | #{q.formstack_photo_url}
+- if @quote_requests.present? then
+  - @quote_requests.each do |q|
+    .row.quote-request-summary
+      .col-sm-2
+        =link_to(image_tag(q.photo.url(:size320)), admin_quote_request_path(id:q.id))
+      .col-sm-10.detail
+        =q.created_at
+        %br/
+        ="#{q.full_name} (#{q.email})"
+        %br/
+        ="ZIP Code: #{q.postal_code}"
+- else
+  %p No quote requests to display

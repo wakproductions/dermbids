@@ -10,6 +10,7 @@ Feature: As an admin I am able to organize the visible quotes by its status with
       |mcyrus-new@example.com         |Miley Cyrus        |new     |
       |jtimberlake-active@example.com |Justin Timberlake  |active  |
       |tjones-archived@example.com    |Tom Jones          |archived|
+      |mjackson-revisit@example.com   |Michael Jackson    |revisit |
     And I am not logged in
     And I log in as "administrator-jones@example.com" with password "secretpassword"
     And I visit the administrator home page
@@ -21,16 +22,24 @@ Feature: As an admin I am able to organize the visible quotes by its status with
     And I should not see "Justin Timberlake"
     And I should not see "Tom Jones"
 
-  Scenario: I filter for only the newly submitted items
+  Scenario: I filter for only the active items
     When I click "Active"
     Then I should see "jtimberlake-active@example.com"
     And I should see "Justin Timberlake"
     And I should not see "Miley Cyrus"
     And I should not see "Tom Jones"
 
-  Scenario: I filter for only the newly submitted items
+  Scenario: I filter for only the archived items
     When I click "Archived"
     Then I should see "tjones-archived@example.com"
     And I should see "Tom Jones"
     And I should not see "Miley Cyrus"
     And I should not see "Justin Timberlake"
+
+  Scenario: I filter for only the items I should to revisit in the future
+    When I click "Revisit"
+    Then I should see "mjackson-revisit@example.com"
+    And I should see "Michael Jackson"
+    And I should not see "Miley Cyrus"
+    And I should not see "Justin Timberlake"
+    And I should not see "Tom Jones"
