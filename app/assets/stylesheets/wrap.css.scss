@@ -28,6 +28,13 @@
   padding-right: 15px;
 }
 
+.container > .container-box {
+  border: 1px solid black;
+  background-color: #ffffff;
+  padding: 40px;
+  margin: 0px 75px;
+}
+
 .form-signin {
   max-width: 330px;
   padding: 15px;
