@@ -21,3 +21,82 @@
 #  admin_user.save!
 #end
 
+# Create the initial set of clinics in the Chicago area
+
+clinic_user = User.create(
+      user_type: User::TYPES[:provider],
+      first_name: 'Monika',
+      email: 'monika@vamoosetattooremoval.com'
+)
+
+Clinic.create(
+    business_name: 'Vamoose Tattoo Removal',
+    city: 'Chicago',
+    state_id: '13',
+    quote_request_contact_user_id: clinic_user.id
+)
+
+clinic_user = User.create(
+    user_type: User::TYPES[:provider],
+    first_name: 'Bob',
+    email: 'hindsighttattooremoval@gmail.com'
+)
+
+Clinic.create(
+    business_name: 'Hindsight Studios',
+    city: 'Chicago',
+    state_id: '13',
+    quote_request_contact_user_id: clinic_user.id
+)
+
+clinic_user = User.create(
+    user_type: User::TYPES[:provider],
+    first_name: 'Anthony',
+    email: 'erasetattoo100@gmail.com'
+)
+
+Clinic.create(
+    business_name: 'Erase Laser Tattoo Removal',
+    city: 'Chicago',
+    state_id: '13',
+    quote_request_contact_user_id: clinic_user.id
+)
+
+clinic_user = User.create(
+    user_type: User::TYPES[:provider],
+    first_name: 'Cheighton',
+    email: 'cleighton@sempurnaclinic.com'
+)
+
+Clinic.create(
+    business_name: 'Sempurna Restoration Clinic',
+    city: 'Chicago',
+    state_id: '13',
+    quote_request_contact_user_id: clinic_user.id
+)
+
+clinic_user = User.create(
+    user_type: User::TYPES[:provider],
+    first_name: 'Pandit',
+    email: 'drpandit@sbcglobal.net'
+)
+
+Clinic.create(
+    business_name: 'Pandit',
+    city: 'Chicago',
+    state_id: '13',
+    quote_request_contact_user_id: clinic_user.id
+)
+
+clinic_user = User.create(
+    user_type: User::TYPES[:provider],
+    first_name: 'ahpiera',
+    email: 'ahpiera@lipodoc.com'
+)
+
+Clinic.create(
+    business_name: 'Liposuction & Cosmetic Surgery Institute',
+    city: 'Chicago',
+    state_id: '13',
+    quote_request_contact_user_id: clinic_user.id
+)

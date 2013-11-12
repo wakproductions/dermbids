@@ -10,10 +10,8 @@
       .col-sm-2.image
         =link_to(image_tag(q.photo.url(:size320)), admin_quote_request_path(id:q.id))
       .col-sm-10.detail
-        =q.created_at
-        %br/
-        ="#{q.full_name} (#{q.email})"
-        %br/
-        ="Postal Code: #{q.postal_code} (#{city_from_zip_code(q.postal_code)})"
+        %p=q.created_at
+        %p=raw("#{q.full_name} (#{mail_to(q.email)})")
+        %p="Postal Code: #{q.postal_code} (#{city_from_zip_code(q.postal_code)})"
 - else
   %p No quote requests to display
