@@ -18,7 +18,7 @@ class QuoteRequest < ActiveRecord::Base
     s3_credentials: {
         access_key_id: ENV['AMAZON_ACCESS_KEY_ID'],
         secret_access_key: ENV['AMAZON_SECRET_ACCESS_KEY'],
-        bucket: 'dermbids_development' #TODO change this to an environment variable
+        bucket: ENV['AMAZON_BUCKET'] #TODO change this to an environment variable
     },
     styles: { size320: '320' },
     path: '/:style/:hash.:extension',
@@ -37,8 +37,8 @@ class QuoteRequest < ActiveRecord::Base
   end
 
   def self.filter(filter_hash={})
-    result = all
-    result.where(status: QuoteRequest::STATUS[filter_hash[:status].to_sym]) if filter_hash.include? :status
+    result = all.order('id desc')
+    result.where(status: QuoteRequest::STATUS[filter_hash[:status].to_sym]).order('id desc') if filter_hash.include? :status
   end
 
   # Override the status setter so that we can pass it either a string or value
