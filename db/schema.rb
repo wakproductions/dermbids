@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131022010818) do
+ActiveRecord::Schema.define(version: 20131113003416) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,13 @@ ActiveRecord::Schema.define(version: 20131022010818) do
     t.datetime "updated_at"
   end
 
+  create_table "countries", force: true do |t|
+    t.string   "country_name"
+    t.string   "iso_code"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "quote_requests", force: true do |t|
     t.text     "formstack_data"
     t.datetime "created_at"
@@ -51,6 +58,7 @@ ActiveRecord::Schema.define(version: 20131022010818) do
     t.integer  "photo_file_size"
     t.datetime "photo_updated_at"
     t.integer  "status"
+    t.string   "country"
   end
 
   create_table "states", force: true do |t|

@@ -1,0 +1,44 @@
+= form_for(@quote_request, :html => { :multipart => true }) do |f|
+  - if @quote_request.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@quote_request.errors.count, "error")} prohibited this quote request from being processed:"
+      %ul
+        - @quote_request.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :email
+    %br
+    = f.text_field :email
+  .field
+    = f.label :full_name
+    %br
+    = f.text_field :full_name
+  .field
+    = f.label :postal_code
+    %br
+    = f.text_field :postal_code
+  .field
+    = f.label :country
+    %br
+    = f.collection_select :country, Country.all, :country_name, :country_name, value: "United States"
+  .field
+    = f.label :photo
+    %br
+    = f.file_field :photo, accept: 'image/*'
+  .field
+    = check_box_tag :frame_of_reference
+    %br
+    = label_tag :frame_of_reference, "Is there a ruler, dollar bill, or quarter next to the tattoo in your picture?"
+  .actions
+    = f.submit "Get My Quote", class: "btn btn-success"
+
+:javascript
+  $('form.new_quote_request').submit(function() {
+      if(!$('#frame_of_reference').prop('checked')) {
+          alert('Please provide a photo which shows a frame of reference next to the tattoo to approximate size. ' +
+          'A quarter, dollar bill, or ruler in the picture will do. This will allow us to better estimate the cost.');
+          $('#frame_of_reference').parent('div').attr('class','field_with_errors')
+          return false;
+      }
+  });
