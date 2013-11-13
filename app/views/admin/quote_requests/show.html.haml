@@ -8,6 +8,7 @@
   .col-sm-8
     %p= raw("#{@quote_request.full_name} (#{mail_to(@quote_request.email, @quote_request.email)})")
     %p= "Postal Code: #{@quote_request.postal_code} (#{city_from_zip_code(@quote_request.postal_code)})"
+    %p= "Country: #{@quote_request.country}"
     %p{style: "display: inline"}
       Status:
       .btn-group
