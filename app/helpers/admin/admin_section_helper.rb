@@ -71,5 +71,24 @@ Eric
 END
   end
 
+  def tattoo_removal_introduction_email_body_for_patient
+    <<END
+Hi #{@quote_request.full_name},
+
+
+Thank you for submitting your request for a tattoo removal quote from Dermbids. We are excited to help you find competitive estimates from local providers.
+
+
+Is there a per session budget that you would like to stay within? If a provider is able to work within your budget, how likely are you to schedule your appointment within the next 30 days? Is there any particular laser type or location you are interested in?
+
+
+We are looking forward to helping you make this next step!
+
+Thanks,
+Eric
+
+END
+  end
+
 
 end
