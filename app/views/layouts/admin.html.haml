@@ -17,6 +17,7 @@
           =link_to 'Dermbids Administration', admin_root_path, class: 'navbar-brand'
         -if user_signed_in?
           %ul.nav.navbar-nav.navbar-right
+            %li= link_to 'Clinics Admin', admin_clinics_path
             %li= link_to 'Sign Out', destroy_user_session_path, method: :delete
       .container
         -flash.each do |name, msg|

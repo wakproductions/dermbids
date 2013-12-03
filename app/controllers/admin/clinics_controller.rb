@@ -1,5 +1,6 @@
 class Admin::ClinicsController < AdminController
-  before_action :set_clinic, only: [:show, :edit, :update, :destroy]
+  before_action :set_clinic, only: [:show, :edit, :update]
+  before_action :authenticate_admin_user!
 
   # GET /clinics
   # GET /clinics.json
@@ -15,6 +16,7 @@ class Admin::ClinicsController < AdminController
   # GET /clinics/new
   def new
     @clinic = Clinic.new
+    @clinic.build_quote_request_contact(user_type: User::TYPES[:provider])
   end
 
   # GET /clinics/1/edit
@@ -28,7 +30,7 @@ class Admin::ClinicsController < AdminController
 
     respond_to do |format|
       if @clinic.save
-        format.html { redirect_to @clinic, notice: 'Clinic was successfully created.' }
+        format.html { redirect_to [:admin,@clinic], notice: 'Clinic was successfully created.' }
         format.json { render action: 'show', status: :created, location: @clinic }
       else
         format.html { render action: 'new' }
@@ -42,7 +44,7 @@ class Admin::ClinicsController < AdminController
   def update
     respond_to do |format|
       if @clinic.update(clinic_params)
-        format.html { redirect_to @clinic, notice: 'Clinic was successfully updated.' }
+        format.html { redirect_to [:admin,@clinic], notice: 'Clinic was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
@@ -69,6 +71,7 @@ class Admin::ClinicsController < AdminController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def clinic_params
-      params.require(:clinic).permit(:business_name, :address1, :address2, :city, :state, :postal_code)
+      params.require(:clinic).permit(:business_name, :address1, :address2, :city, :state, :postal_code,
+        :quote_request_contact_attributes=>[:first_name, :last_name, :email, :id])
     end
 end
