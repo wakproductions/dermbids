@@ -22,7 +22,9 @@
     %h3 Email Templates for Patient
     %ul
       %li
-        = mail_to @quote_request.email, "Tattoo Removal Estimates from DermBids", subject: "Quote Request Details", body: tattoo_removal_estimates_email_body_for_patient
+        = mail_to @quote_request.email, "Tattoo Removal Estimates from Dermbids", subject: "Dermbids Quote Request Details", body: tattoo_removal_estimates_email_body_for_patient
+      %li
+        = mail_to @quote_request.email, "Follow up on Tattoo Removal Estimates from Dermbids", subject: "Followup on Dermbids Quote Request", body: tattoo_removal_estimates_followup_email_body_for_patient
 
 :coffee
   $('.change-status-link').click ->

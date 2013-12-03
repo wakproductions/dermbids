@@ -1,5 +1,5 @@
 class QuoteRequestMailer < ActionMailer::Base
-  default from: DEFAULT_MAILER_FROM
+  default from: DEFAULT_MAILER_FROM, bcc: DEFAULT_MAILER_BCC
 
   def request_quote_from_provider(quote_request, clinic)
     @clinic = clinic

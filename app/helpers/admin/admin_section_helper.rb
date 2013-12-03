@@ -27,7 +27,7 @@ module Admin::AdminSectionHelper
 
   def tattoo_removal_estimates_email_body_for_patient
    <<END
-Hi #{@quote_request.full_name},
+Hi #{@quote_request.first_name},
 
 There are _____ tattoo removal providers in the #{city_from_zip_code(@quote_request.postal_code)} area interested in removing your tattoo! There are ___ providers in the area providing the r20 method. We did provide you a PicoSure estimate.
 
@@ -58,4 +58,18 @@ Thanks,
 Eric
 END
   end
+
+  def tattoo_removal_estimates_followup_email_body_for_patient
+    <<END
+Hi #{@quote_request.first_name},
+
+I wanted to follow up with you about the tattoo removal estimates I sent you. Do you like one provider over another?
+
+Please let me know if you have any questions!
+
+Eric
+END
+  end
+
+
 end

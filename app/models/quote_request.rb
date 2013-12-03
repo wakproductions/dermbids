@@ -64,6 +64,10 @@ class QuoteRequest < ActiveRecord::Base
     full_name[/(\w*\s.|\w*)/] + '**********'
   end
 
+  def first_name
+    full_name[/(\w*)/]
+  end
+
   # Creates a ClinicCommunication object to log the fact that a quote request was sent to the given clinic
   def request_quote_from_clinic(clinic, initiated_by_user=nil)
     clinic_communication=self.clinic_communications.create(
