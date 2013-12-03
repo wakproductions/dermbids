@@ -18,6 +18,12 @@
         %ul.dropdown-menu{role: "menu"}
           -QuoteRequest::STATUS.keys.each do |k|
             %li= link_to(k.capitalize, "#", :"data-value"=>k, :class=>"change-status-link")
+    %hr
+    %h3 Email Templates for Patient
+    %ul
+      %li
+        = mail_to @quote_request.email, "Tattoo Removal Estimates from DermBids", subject: "Quote Request Details", body: tattoo_removal_estimates_email_body_for_patient
+
 :coffee
   $('.change-status-link').click ->
     $('#change-status-form input#quote_request_status').val($(this).attr('data-value'))
