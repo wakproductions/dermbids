@@ -11,4 +11,4 @@
               =hidden_field_tag 'quote_request_id', @quote_request.id
               =hidden_field_tag 'clinic_id', clinic.id
               =hidden_field_tag 'type', ClinicCommunication::COMMUNICATION_TYPES[:quote_request]
-              =submit_tag 'Request Quote'
+              =submit_tag 'Request Quote', class: "btn btn-info"

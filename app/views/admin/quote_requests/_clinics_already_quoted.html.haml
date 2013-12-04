@@ -4,16 +4,19 @@
     %table.table
       -@clinics.already_quote_requested(@quote_request).each do |clinic|
         %tr
-          %td= clinic.business_name
-          %td= "#{clinic.city}, #{clinic.state}"
-          %td
-            = form_tag admin_clinic_communications_path do
+          %td{width:"33%"}= clinic.business_name
+          %td{width:"33%"}= "#{clinic.city}, #{clinic.state}"
+          %td{width:"33%"}
+            = form_tag admin_clinic_communications_path, style: "display:inline" do
               =hidden_field_tag 'quote_request_id', @quote_request.id
               =hidden_field_tag 'clinic_id', clinic.id
               =hidden_field_tag 'type', ClinicCommunication::COMMUNICATION_TYPES[:quote_request]
-              =submit_tag 'Resend Quote Request'
-            = form_tag admin_clinic_communications_path do
+              =submit_tag 'Resend Quote Request', class: "btn btn-default"
+            = form_tag admin_clinic_communications_path, style: "display:inline"  do
               =hidden_field_tag 'quote_request_id', @quote_request.id
               =hidden_field_tag 'clinic_id', clinic.id
               =hidden_field_tag 'type', ClinicCommunication::COMMUNICATION_TYPES[:send_patient_details]
-              =submit_tag 'Send Full Details'
+              -if clinic.sent_quote_request_patient_details?(@quote_request)
+                =submit_tag 'Resend Full Details', class: "btn btn-default"
+              -else
+                =submit_tag 'Send Full Details', class: "btn btn-info"

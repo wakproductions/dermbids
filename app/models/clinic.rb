@@ -16,4 +16,8 @@ class Clinic < ActiveRecord::Base
     self.state_id = State.find_by(abbr: abbr).id
   end
 
+  def sent_quote_request_patient_details?(quote_request)
+    clinic_communications.exists?(quote_request: quote_request, communication_type: ClinicCommunication::COMMUNICATION_TYPES[:send_patient_details]).present?
+  end
+
 end
